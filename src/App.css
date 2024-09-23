@@ -153,8 +153,8 @@ html {
 }
 
 body {
-  /* background: var(--smoky-black); */
-  background-image: url(/src/assets/GIP/4NB4.gif);
+  /* background-color: var(--smoky-black); */
+  background-image: url(/assets/GIP/4NB4.gif);
 }
 
 /*-----------------------------------*\
@@ -340,7 +340,7 @@ main {
 
 .avatar-box img {
   /* background: gray; */
-  background-image: url(/src/assets/images/logo.svg);
+  background-image: url(/assets/images/logo.svg);
   /* border-radius: 20px; */
   border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
 }

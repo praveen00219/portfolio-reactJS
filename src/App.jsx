@@ -34,13 +34,13 @@ function App() {
         <Sidebar />
         <div className="main-content">
           <Navbar activePage={activePage} setActivePage={setActivePage} />
-          {activePage === "about" && <About />}
+          {activePage === "about" && <About onOpenModal={openModal} />}
           {activePage === "education" && <Education />}
-          {activePage === "projects" && <Projects onOpenModal={openModal} />}
+          {activePage === "projects" && <Projects />}
           {activePage === "certificates" && (
             <Certificates onOpenModal={openModal} />
           )}
-          {activePage === "contact" && <ContactForm onOpenModal={openModal} />}
+          {activePage === "contact" && <ContactForm />}
         </div>
         <TestimonialsModal
           isOpen={modalOpen}
