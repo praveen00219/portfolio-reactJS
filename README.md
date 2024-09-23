@@ -38,8 +38,8 @@ Check out the live demo of my portfolio here: [Live Demo]()
 
 ## Screenshots ShowCase
 
-![Desktop Demo](/assets/images/showcase/desktop-views.png "Desktop Demo")
-![Mobile Demo](/assets/images/showcase/mobile-view.png "Mobile Demo")
+![Desktop Demo](/public/assets/images/showcase/desktop-views.png "Desktop Demo")
+![Mobile Demo](/public/assets/images/showcase/mobile-view.png "Mobile Demo")
 
 ## Installation
 
