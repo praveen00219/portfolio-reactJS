@@ -97,27 +97,27 @@ const Education = () => {
             <h4 className="h4 timeline-item-title">Programming Languages:</h4>
             <div className="flex gap-3 flex-wrap mt-3">
               <img
-                src="/src/assets/images/tools/html.webp"
+                src="/assets/images/tools/html.webp"
                 className="w-16"
                 alt="html"
               />
               <img
-                src="/src/assets/images/tools/css.svg"
+                src="/assets/images/tools/css.svg"
                 className="w-16"
                 alt="CSS"
               />
               <img
-                src="/src/assets/images/tools/Java.png"
+                src="/assets/images/tools/Java.png"
                 className="w-16"
                 alt="Java"
               />
               <img
-                src="/src/assets/images/tools/JS.webp"
+                src="/assets/images/tools/JS.webp"
                 className="w-16"
                 alt="JS"
               />
               <img
-                src="/src/assets/images/tools/NodeJS.png"
+                src="/assets/images/tools/NodeJS.png"
                 className="w-16"
                 alt="NodeJS"
               />
@@ -128,32 +128,32 @@ const Education = () => {
             <h4 className="h4 timeline-item-title">Frameworks & Libraries:</h4>
             <div className="flex gap-3 flex-wrap mt-3">
               <img
-                src="/src/assets/images/tools/Tailwindcss.png"
+                src="/assets/images/tools/Tailwindcss.png"
                 className="w-16"
                 alt="Tailwindcss"
               />
               <img
-                src="/src/assets/images/tools/ReactJS.webp"
+                src="/assets/images/tools/ReactJS.webp"
                 className="w-16"
                 alt="ReactJS"
               />
               <img
-                src="/src/assets/images/tools/ExpressJS.webp"
+                src="/assets/images/tools/ExpressJS.webp"
                 className="w-16"
                 alt="ExpressJS"
               />
               <img
-                src="/src/assets/images/tools/MongoDB.svg"
+                src="/assets/images/tools/MongoDB.svg"
                 className="w-16"
                 alt="MongoDB"
               />
               <img
-                src="/src/assets/images/tools/firebase.png"
+                src="/assets/images/tools/firebase.png"
                 className="w-16"
                 alt="firebase"
               />
               <img
-                src="/src/assets/images/tools/cloudinary-icon.png"
+                src="/assets/images/tools/cloudinary-icon.png"
                 className="w-16"
                 alt="cloudinary-icon"
               />
@@ -164,22 +164,22 @@ const Education = () => {
             <h4 className="h4 timeline-item-title">Tools:</h4>
             <div className="flex gap-3 flex-wrap mt-3">
               <img
-                src="/src/assets/images/tools/Git_icon.png"
+                src="/assets/images/tools/Git_icon.png"
                 className="w-16"
                 alt="Git_icon"
               />
               <img
-                src="/src/assets/images/tools/gitHub.png"
+                src="/assets/images/tools/gitHub.png"
                 className="w-16"
                 alt="gitHub"
               />
               <img
-                src="/src/assets/images/tools/postman.svg"
+                src="/assets/images/tools/postman.svg"
                 className="w-16"
                 alt="postman"
               />
               <img
-                src="/src/assets/images/tools/Visual_Studio_Code.png"
+                src="/assets/images/tools/Visual_Studio_Code.png"
                 className="w-16"
                 alt="Visual_Studio_Code"
               />
