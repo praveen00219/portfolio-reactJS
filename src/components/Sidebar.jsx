@@ -10,11 +10,7 @@ const Sidebar = () => {
     <aside className={`sidebar ${isActive ? "active" : ""}`} data-sidebar>
       <div className="sidebar-info">
         <figure className="avatar-box">
-          <img
-            src="/src/assets/images/my-avatar.png"
-            alt="Praveen"
-            width="80"
-          />
+          <img src="/assets/images/my-avatar.png" alt="Praveen" width="80" />
         </figure>
         <div className="info-content">
           <h1 className="name" title="Richard hanrick">
@@ -101,7 +97,7 @@ const Sidebar = () => {
           <li className="social-item">
             <a href="https://leetcode.com/u/Prvn21/" className="social-link">
               <img
-                src="/src/assets/images/Social-Icon/leetcode-logo.png"
+                src="/assets/images/Social-Icon/leetcode-logo.png"
                 className="w-5"
                 alt="leetcode-logo-icon"
               />
@@ -114,7 +110,7 @@ const Sidebar = () => {
               className="social-link"
             >
               <img
-                src="/src/assets/images/Social-Icon/Hackerrank_logo.webp"
+                src="/assets/images/Social-Icon/Hackerrank_logo.webp"
                 className="w-5"
                 alt="Hackerrank_logo-icon"
               />

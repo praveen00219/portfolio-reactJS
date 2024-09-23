@@ -1,8 +1,9 @@
 import React from "react";
 
 const TestimonialsModal = ({ isOpen, onClose, content }) => {
-  if (!isOpen) return null; // Modal is only visible if `isOpen` is true
+  if (!isOpen) return null; // Return null if the modal is not open
 
+  console.log("content", content);
   return (
     <div className="modal-container active" data-modal-container>
       <div className="overlay" onClick={onClose}></div>
@@ -12,17 +13,19 @@ const TestimonialsModal = ({ isOpen, onClose, content }) => {
         </button>
         <div className="modal-img-wrapper">
           <figure className="modal-avatar-box">
-            <img src={content.avatar} alt={content.name} width="80" />
+            <img
+              src={content.avatar}
+              alt="Avatar"
+              className="modal-avatar py-2"
+              width="80"
+            />
           </figure>
-          <img
-            src={`${process.env.PUBLIC_URL}/assets/images/icon-quote.svg`}
-            alt="quote icon"
-          />
+          <img src="/assets/images/icon-quote.svg" alt="quote icon" />
         </div>
         <div className="modal-content">
           <h4 className="h3 modal-title">{content.name}</h4>
           <time>{content.date}</time>
-          <p>{content.text}</p>
+          <p>{content.description}</p>
         </div>
       </section>
     </div>
