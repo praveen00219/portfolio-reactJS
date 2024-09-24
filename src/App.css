@@ -154,7 +154,7 @@ html {
 
 body {
   /* background-color: var(--smoky-black); */
-  background-image: url(/assets/GIP/4NB4.gif);
+  /* background-image: url(/assets/GIP/4NB4.gif); */
 }
 
 /*-----------------------------------*\
@@ -1022,6 +1022,10 @@ main {
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
+}
+
+.project-item:hover .project-title {
+  color: var(--vegas-gold);
 }
 
 .project-img::before {

@@ -7,7 +7,10 @@ function Certificates({ onOpenModal }) {
       img: `/assets/images/Certificates/git-github.jpg`,
       _date: `30th May, 2024`,
       institute: `Geekster`,
+      instituteUrl: `https://www.geekster.in/`,
       instituteLogo: `/assets/images/Social-Icon/geekster-logo.png`,
+      skill:
+        "Git Basics, Branching and Merging, Git Skills, GitHub Skills, and more...",
       title: "Git-GitHub",
       about: `Successfully Complete Git and Github Course and have
                       earned this certificate on 30th May 2024.`,
@@ -17,7 +20,10 @@ function Certificates({ onOpenModal }) {
       img: `/assets/images/Certificates/responsive-web-page.jpg`,
       _date: `16th June, 2024`,
       institute: `Geekster`,
+      instituteUrl: `https://www.geekster.in/`,
       instituteLogo: `/assets/images/Social-Icon/geekster-logo.png`,
+      skill:
+        "Fundamentals, Layout Techniques, Transitions, Animations, and more...",
       title: "Responsive Web Page",
       about: ` Successfully completed the course:
                     Building Responsive Landing Page Using HTML And CSS
@@ -28,7 +34,9 @@ function Certificates({ onOpenModal }) {
       img: `/assets/images/Certificates/java.jpg`,
       _date: `9th March, 2024`,
       institute: `Geekster`,
+      instituteUrl: `https://www.geekster.in/`,
       instituteLogo: `/assets/images/Social-Icon/geekster-logo.png`,
+      skill: "",
       title: "Mastering Java",
       about: `Successfully completed the course:
                     Mastering Java Programming Fundamentals
@@ -39,7 +47,9 @@ function Certificates({ onOpenModal }) {
       img: `/assets/images/Certificates/java-scaler-topics.jpg`,
       _date: `12th July, 2024`,
       institute: `SCALER-TOPICS`,
+      instituteUrl: `https://www.scaler.com/topics/`,
       instituteLogo: `/assets/images/Social-Icon/Scaler-logo.png`,
+      skill: "",
       title: "Mastering Java",
       about: `Successfully completed Mastering Java Course: Basic to Advance
                     and has earned this certificate on 12th July 2024.`,
@@ -49,7 +59,9 @@ function Certificates({ onOpenModal }) {
       img: `/assets/images/Certificates/javaScript-geekster.jpg`,
       _date: `1st April, 2024`,
       institute: `Geekster`,
+      instituteUrl: `https://www.geekster.in/`,
       instituteLogo: `/assets/images/Social-Icon/geekster-logo.png`,
+      skill: "",
       title: "Mastering JavaScript",
       about: `Successfully completed the course:
                     Mastering JavaScript Fundamentals
@@ -60,7 +72,9 @@ function Certificates({ onOpenModal }) {
       img: `/assets/images/Certificates/javaScript-freeCodeCamp.jpg`,
       _date: ` 19th July, 2024`,
       institute: `freeCodeCamp`,
+      instituteUrl: `https://www.freecodecamp.org/`,
       instituteLogo: `/assets/images/Social-Icon/freeCodeCamp-logo.png`,
+      skill: "",
       title: "Mastering JavaScript DSA",
       about: `Successfully completed the Legacy JavaScript Algorithms and Data Structures. | representing
                     approximately 300 hours of work.`,
@@ -70,7 +84,9 @@ function Certificates({ onOpenModal }) {
       img: `/assets/images/Certificates/javaScript-intermediate-hackerRank.jpg`,
       _date: ` 11th Aug, 2024`,
       institute: `HackerRank`,
+      instituteUrl: `https://www.hackerrank.com/about-us/home/`,
       instituteLogo: `/assets/images/Social-Icon/Hackerrank_logo.webp`,
+      skill: "",
       title: "JavaScript (Intermediate)",
       about: `  Successfully Completed Intermediate JavaScript Skill Test.`,
     },
@@ -79,7 +95,9 @@ function Certificates({ onOpenModal }) {
       img: `/assets/images/Certificates/problem-solving-intermediate-hackerRank.jpg`,
       _date: ` 11th Aug, 2024`,
       institute: `HackerRank`,
+      instituteUrl: `https://www.hackerrank.com/about-us/home/`,
       instituteLogo: `/assets/images/Social-Icon/Hackerrank_logo.webp`,
+      skill: "",
       title: "JavaScript Problem Solving (Intermediate)",
       about: ` Successfully Completed Intermediate JavaScript Problem Solving Skill Test.`,
     },
@@ -88,7 +106,9 @@ function Certificates({ onOpenModal }) {
       img: `/assets/images/Certificates/SQL-geekster.jpg`,
       _date: `11th June, 2024`,
       institute: `Geekster`,
+      instituteUrl: `https://www.geekster.in/`,
       instituteLogo: `/assets/images/Social-Icon/geekster-logo.png`,
+      skill: "",
       title: "SQL Database",
       about: ` Successfully completed SQL Certification Course: Basic to Advance
                     and has earned this certificate on 11th June 2024.`,
@@ -104,8 +124,8 @@ function Certificates({ onOpenModal }) {
         <section className="blog-posts">
           <ul className="blog-posts-list">
             {certificatesList.map((certificate, index) => (
-              <li className="blog-post-item">
-                <a href={certificate.url}>
+              <li key={"certificate" + index} className="blog-post-item">
+                <a href={certificate.url} target="_blank">
                   <figure className="blog-banner-box">
                     <img
                       src={certificate.img}
@@ -114,18 +134,29 @@ function Certificates({ onOpenModal }) {
                     />
                   </figure>
                   <div className="blog-content">
+                    <h3 className="h3 blog-item-title">{certificate.title}</h3>
                     <div className="blog-meta">
                       <span className="dot"></span>
-                      <img
-                        className="h-5 rounded"
-                        src={certificate.instituteLogo}
-                        alt={certificate.institute}
-                      />
-                      <time className="text-xs" datetime="2024-05-30">
+                      <a href={certificate.instituteUrl}>
+                        <img
+                          className="h-5 rounded"
+                          src={certificate.instituteLogo}
+                          alt={certificate.institute}
+                        />
+                      </a>
+                      <p
+                        className="text-xs text-gray-400"
+                        datetime="2024-05-30"
+                      >
                         {certificate.institute} | {certificate._date}
-                      </time>
+                      </p>
                     </div>
-                    <h3 className="h3 blog-item-title">{certificate.title}</h3>
+                    <div className="blog-meta items-start">
+                      <span className="dot mt-2"></span>
+                      <div className="text-sm text-gray-400 ">
+                        <p> Skills : {certificate.skill}</p>
+                      </div>
+                    </div>
                     <p className="blog-text">{certificate.about}</p>
                   </div>
                 </a>
