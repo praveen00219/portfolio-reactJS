@@ -32,8 +32,8 @@ const About = ({ onOpenModal }) => {
       </header>
       <section className="about-text">
         <p>
-          🎓 Graduated with a BSc from MDS-University in Ajmer (Rajasthan) and
-          Currently learning Full-Stack Web Development at @Geekster.
+          🎓 Graduated with a BSc from MDS-University in Ajmer (Rajasthan){" "}
+          <br />✨ Currently learning Full-Stack Web Development at @Geekster.
         </p>
         <p>
           🔧 Hold several certificates in key areas including Git-GitHub,
