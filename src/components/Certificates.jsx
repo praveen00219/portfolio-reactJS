@@ -36,7 +36,8 @@ function Certificates({ onOpenModal }) {
       institute: `Geekster`,
       instituteUrl: `https://www.geekster.in/`,
       instituteLogo: `/assets/images/Social-Icon/geekster-logo.png`,
-      skill: "",
+      skill:
+        "Syntax and Structure,Functions, Loops, Collections and Data Structures, Multithreading, and more...",
       title: "Mastering Java",
       about: `Successfully completed the course:
                     Mastering Java Programming Fundamentals
@@ -49,7 +50,8 @@ function Certificates({ onOpenModal }) {
       institute: `SCALER-TOPICS`,
       instituteUrl: `https://www.scaler.com/topics/`,
       instituteLogo: `/assets/images/Social-Icon/Scaler-logo.png`,
-      skill: "",
+      skill:
+        "Syntax and Structure,Functions, Loops, Collections and Data Structures, Multithreading, and more...",
       title: "Mastering Java",
       about: `Successfully completed Mastering Java Course: Basic to Advance
                     and has earned this certificate on 12th July 2024.`,
@@ -61,7 +63,8 @@ function Certificates({ onOpenModal }) {
       institute: `Geekster`,
       instituteUrl: `https://www.geekster.in/`,
       instituteLogo: `/assets/images/Social-Icon/geekster-logo.png`,
-      skill: "",
+      skill:
+        "Functions,Objects, Loops, Error Handling and DOM, Closures, Scope and Hoisting, (ES6+) Skills, and more...",
       title: "Mastering JavaScript",
       about: `Successfully completed the course:
                     Mastering JavaScript Fundamentals
@@ -74,7 +77,8 @@ function Certificates({ onOpenModal }) {
       institute: `freeCodeCamp`,
       instituteUrl: `https://www.freecodecamp.org/`,
       instituteLogo: `/assets/images/Social-Icon/freeCodeCamp-logo.png`,
-      skill: "",
+      skill:
+        "Functions,Objects, Loops, Error Handling and DOM, Closures, Scope and Hoisting, (ES6+) Skills, JSON, Debugging, and more...",
       title: "Mastering JavaScript DSA",
       about: `Successfully completed the Legacy JavaScript Algorithms and Data Structures. | representing
                     approximately 300 hours of work.`,
@@ -86,7 +90,8 @@ function Certificates({ onOpenModal }) {
       institute: `HackerRank`,
       instituteUrl: `https://www.hackerrank.com/about-us/home/`,
       instituteLogo: `/assets/images/Social-Icon/Hackerrank_logo.webp`,
-      skill: "",
+      skill:
+        "Functions,Objects, Loops, Error Handling and DOM, Closures, Scope and Hoisting, (ES6+) Skills, JSON, Debugging, and more...",
       title: "JavaScript (Intermediate)",
       about: `  Successfully Completed Intermediate JavaScript Skill Test.`,
     },
@@ -97,7 +102,8 @@ function Certificates({ onOpenModal }) {
       institute: `HackerRank`,
       instituteUrl: `https://www.hackerrank.com/about-us/home/`,
       instituteLogo: `/assets/images/Social-Icon/Hackerrank_logo.webp`,
-      skill: "",
+      skill:
+        "Algorithm Design, Data Structures, Time and Space Complexity,Object Manipulation, Asynchronous, Recursion, Dynamic Programming, and more...",
       title: "JavaScript Problem Solving (Intermediate)",
       about: ` Successfully Completed Intermediate JavaScript Problem Solving Skill Test.`,
     },
@@ -108,7 +114,8 @@ function Certificates({ onOpenModal }) {
       institute: `Geekster`,
       instituteUrl: `https://www.geekster.in/`,
       instituteLogo: `/assets/images/Social-Icon/geekster-logo.png`,
-      skill: "",
+      skill:
+        "Database Concepts, Data Filtering, Sorting and Limiting Data, Joins and Subqueries, Data Modification, and more...",
       title: "SQL Database",
       about: ` Successfully completed SQL Certification Course: Basic to Advance
                     and has earned this certificate on 11th June 2024.`,
