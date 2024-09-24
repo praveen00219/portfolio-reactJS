@@ -69,8 +69,7 @@ const About = ({ onOpenModal }) => {
           <li className="service-item">
             <div className="service-icon-box">
               <img
-                src="/assets/images/icon-design.svg
-                "
+                src="/assets/images/icon-design.svg"
                 alt="design icon"
                 width="40"
               />
@@ -78,8 +77,8 @@ const About = ({ onOpenModal }) => {
             <div className="service-content-box">
               <h4 className="h4 service-item-title">Front-End Development</h4>
               <p className="service-item-text">
-                The most modern and high-quality, responsive, and interactive
-                web pages made at a professional level.
+                The most modern and high-quality, responsive client-side (UI),
+                and interactive web pages made at a professional level.
               </p>
               <div className="flex gap-3 mt-3">
                 <img
@@ -127,8 +126,8 @@ const About = ({ onOpenModal }) => {
             <div className="service-content-box">
               <h4 className="h4 service-item-title">Back-End Development</h4>
               <p className="service-item-text">
-                Handles professional authentication, business logic, and APIs,
-                and designs, implements, and manages databases.
+                Handles professional server-side authentication, business logic,
+                and APIs, and designs, implements, and manages databases.
               </p>
               <div className="flex gap-3 mt-3">
                 <img
@@ -306,48 +305,6 @@ const About = ({ onOpenModal }) => {
               </div>
             </li>
           ))}
-        </ul>
-      </section>
-
-      {/* <!--- clients--> */}
-      <section className="clients">
-        <h3 className="h3 clients-title">Clients</h3>
-        <ul className="clients-list has-scrollbar">
-          <li className="clients-item">
-            <a href="#">
-              <img src="/assets/images/logo-1-color.png" alt="client logo" />
-            </a>
-          </li>
-
-          <li className="clients-item">
-            <a href="#">
-              <img src="/assets/images/logo-2-color.png" alt="client logo" />
-            </a>
-          </li>
-
-          <li className="clients-item">
-            <a href="#">
-              <img src="/assets/images/logo-3-color.png" alt="client logo" />
-            </a>
-          </li>
-
-          <li className="clients-item">
-            <a href="#">
-              <img src="/assets/images/logo-4-color.png" alt="client logo" />
-            </a>
-          </li>
-
-          <li className="clients-item">
-            <a href="#">
-              <img src="/assets/images/logo-5-color.png" alt="client logo" />
-            </a>
-          </li>
-
-          <li className="clients-item">
-            <a href="#">
-              <img src="/assets/images/logo-6-color.png" alt="client logo" />
-            </a>
-          </li>
         </ul>
       </section>
     </article>
