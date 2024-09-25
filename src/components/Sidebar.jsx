@@ -18,7 +18,11 @@ const Sidebar = () => {
           </h1>
           <p className="title">Full Stack Web Developer</p>
         </div>
-        <button className="info_more-btn" data-sidebar-btn>
+        <button
+          onClick={toggleSidebar}
+          className="info_more-btn"
+          data-sidebar-btn
+        >
           <span>Show Contacts</span>
           <ion-icon name="chevron-down"></ion-icon>
         </button>
