@@ -83,19 +83,28 @@ const Sidebar = () => {
             <a
               href="https://www.linkedin.com/in/praveen219/"
               className="social-link"
+              target="_blank"
             >
               <i className="fa-brands fa-linkedin"></i>
             </a>
           </li>
 
           <li className="social-item">
-            <a href="https://github.com/praveen00219" className="social-link">
+            <a
+              href="https://github.com/praveen00219"
+              target="_blank"
+              className="social-link"
+            >
               <i className="fa-brands fa-github"></i>
             </a>
           </li>
 
           <li className="social-item">
-            <a href="https://leetcode.com/u/Prvn21/" className="social-link">
+            <a
+              href="https://leetcode.com/u/Prvn21/"
+              target="_blank"
+              className="social-link"
+            >
               <img
                 src="/assets/images/Social-Icon/leetcode-logo.png"
                 className="w-5"
@@ -108,6 +117,7 @@ const Sidebar = () => {
             <a
               href="https://www.hackerrank.com/profile/paru2192000"
               className="social-link"
+              target="_blank"
             >
               <img
                 src="/assets/images/Social-Icon/Hackerrank_logo.webp"
@@ -118,13 +128,16 @@ const Sidebar = () => {
           </li>
 
           <li className="social-item">
-            <a href="#" className="social-link">
+            <a
+              href="https://www.instagram.com/pr.vn21/?utm_source=qr&igsh=MTR5OXNpcjdteHpqcQ%3D%3D"
+              className="social-link"
+              target="_blank"
+            >
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
         </ul>
       </div>
-      {/* Additional sidebar content */}
     </aside>
   );
 };
