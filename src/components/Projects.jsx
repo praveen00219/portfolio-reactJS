@@ -12,14 +12,6 @@ const Projects = () => {
         "This is my personal portfolio website built using React, Vite, Tailwind CSS, HTML, CSS, and JavaScript. It showcases my skills, education, projects, certificates, and professional experience as a Full Stack Developer.",
     },
     {
-      demoLink: ``,
-      avatar: `/assets/images/project-1.jpg`,
-      name: "Orizon",
-      language: "React",
-      gitHub_repo: ``,
-      about: "I developed a Orizon using the MERN stack...",
-    },
-    {
       demoLink: `https://main--css-project0.netlify.app/projests/landing-page-html-css/index.html`,
       avatar: `/assets/images/Projects-Things/html-css/Aria-business.jpg`,
       name: "Aria Business Services",
@@ -189,6 +181,169 @@ const Projects = () => {
       language: "JavaScript",
       gitHub_repo: `https://github.com/praveen00219/Generating-the-keyboard-code`,
       about: `Interactive web application that displays the key and keycode of the pressed key.`,
+    },
+    {
+      demoLink: `https://praveen-linked-in-clone-reactjs.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/10 linkedIn-clone.jpg`,
+      name: "linkedIn Clone (Front-End)",
+      language: "React",
+      gitHub_repo: `https://github.com/praveen00219/linkedIn-Clone-React`,
+      about:
+        "A clone of LinkedIn's interface, implemented using React, Redux, Firebase, SCSS, Ant Design (antd), Axios, and other technologies.",
+    },
+    {
+      demoLink: `https://praveen-makecontactapp-redux-firebase.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/11 makeContact-app.jpg`,
+      name: "MakeContact App (Front-End)",
+      language: "React",
+      gitHub_repo: `https://github.com/praveen00219/redux-firebase-react-project`,
+      about:
+        "A simple and intuitive web application to manage your contacts, including favorite contacts, using Firebase for data storage. Built with React and Redux, this app allows you to view, add, search, and delete contacts, making it easy to keep your contact information organized.",
+    },
+    {
+      demoLink: `https://praveen-google-drive-react.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/12 google-drive-clone.jpg`,
+      name: "Google Drive Clone (Front-End)",
+      language: "React",
+      gitHub_repo: `https://github.com/praveen00219/google-drive-react-firebase`,
+      about:
+        "A Google Drive Clone built with React, Vite, Redux, Tailwind CSS, Styled Components, Material-ui/material-icons, and Firebase. This application enables users to manage files and folders, offering features like file uploads, folder creation, deletion, restoring , and favoriting, along with a fullscreen preview option.",
+    },
+    {
+      demoLink: `https://praveen-unsplash-clone-reactjs.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/1 unsplash Clone.jpg`,
+      name: "unsplash-clone",
+      language: "React",
+      gitHub_repo: `https://github.com/praveen00219/unsplash-clone-reactjs`,
+      about:
+        "This component includes a search bar, category navigation, and mobile-friendly features like a hamburger menu and filter toggling. The project is built with React.js and styled using Tailwind CSS for responsive design.",
+    },
+    {
+      demoLink: `https://praveen-img-generator-react-app.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/2 search-img-unsplash.jpg`,
+      name: "Image Search App",
+      language: "React",
+      gitHub_repo: `https://github.com/praveen00219/img-generator-app-react`,
+      about:
+        "This is a modern React-based image search application that uses the Unsplash API to fetch images based on a user's query.",
+    },
+    {
+      demoLink: `https://praveen-lorem-generate-app.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/3 loream-paragraph-generator.jpg`,
+      name: "loream Paragraph Generator",
+      language: "React",
+      gitHub_repo: `https://github.com/praveen00219/lorem-generate-ReactJS`,
+      about:
+        "The Lorem Ipsum Generator is a web-based tool built with React that allows users to generate placeholder text (Lorem Ipsum).",
+    },
+    {
+      demoLink: `https://praveen-edu.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/4 education-planner.jpg`,
+      name: "Education Planner App",
+      language: "React",
+      gitHub_repo: `https://github.com/praveen00219/education-planner-react`,
+      about:
+        "A simple educational planner app built using React. This app allows users to add subjects and the number of hours they plan to dedicate to each subject. Users can increment or decrement the hours for each subject, and the planner data is persisted using local storage.",
+    },
+    {
+      demoLink: `https://praveen-chart-with-reactjs.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/5 EMI loan chart.jpg`,
+      name: "EMI Loan Calculator App",
+      language: "React, ChartJs",
+      gitHub_repo: `https://github.com/praveen00219/ChartWithReactJS`,
+      about:
+        "Interactive EMI Loan Calculator with Dynamic Visualization: Built with React and Chart.js",
+    },
+    {
+      demoLink: `https://praveen-shopping-cart-reactjs.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/6 shopping-cart.jpg`,
+      name: "Shopping Cart App",
+      language: "React",
+      gitHub_repo: `https://github.com/praveen00219/shoppingCartReactjs`,
+      about:
+        "The project features a cart icon that shows the number of items added to the cart, with basic functionality for adding, removing, and adjusting the quantity of items.",
+    },
+    {
+      demoLink: `https://praveen-directory-app-reactjs.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/7 directory-app.jpg`,
+      name: "Directory App",
+      language: "React",
+      gitHub_repo: `https://github.com/praveen00219/Directory-App-Reactjs`,
+      about:
+        "This Person Management Application is a React.js-based project that allows users to manage personal details such as Name, Date of Birth, Aadhar Number, and Mobile Number. ",
+    },
+    {
+      demoLink: `https://praveen-student-from.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/8 student-registration-form.jpg`,
+      name: "Students Form",
+      language: "React",
+      gitHub_repo: `https://github.com/praveen00219/studentFormReact`,
+      about:
+        "Registering students, displaying their details, and providing features to edit, delete, and view individual student information with validation.",
+    },
+    {
+      demoLink: `https://praveen-text-translator-react.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/9 text-translator.jpg`,
+      name: "Text Translator App",
+      language: "React",
+      gitHub_repo: `https://github.com/praveen00219/text-translator-Reactjs`,
+      about:
+        "The Text Translator is a web application built with React, designed to provide seamless text translation from one language to another.",
+    },
+    {
+      demoLink: `https://praveen-linked-in-clone-reactjs.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/10 linkedIn-clone.jpg`,
+      name: "linkedIn Clone (Front-End)",
+      language: "React",
+      gitHub_repo: `https://github.com/praveen00219/linkedIn-Clone-React`,
+      about:
+        "A clone of LinkedIn's interface, implemented using React, Redux, Firebase, SCSS, Ant Design (antd), Axios, and other technologies.",
+    },
+    {
+      demoLink: `https://praveen-makecontactapp-redux-firebase.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/11 makeContact-app.jpg`,
+      name: "MakeContact App (Front-End)",
+      language: "React",
+      gitHub_repo: `https://github.com/praveen00219/redux-firebase-react-project`,
+      about:
+        "A simple and intuitive web application to manage your contacts, including favorite contacts, using Firebase for data storage. Built with React and Redux, this app allows you to view, add, search, and delete contacts, making it easy to keep your contact information organized.",
+    },
+    {
+      demoLink: `https://praveen-google-drive-react.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/12 google-drive-clone.jpg`,
+      name: "Google Drive Clone (Front-End)",
+      language: "React",
+      gitHub_repo: `https://github.com/praveen00219/google-drive-react-firebase`,
+      about:
+        "A Google Drive Clone built with React, Vite, Redux, Tailwind CSS, Styled Components, Material-ui/material-icons, and Firebase. This application enables users to manage files and folders, offering features like file uploads, folder creation, deletion, restoring , and favoriting, along with a fullscreen preview option.",
+    },
+
+    {
+      demoLink: `https://praveen-linked-in-clone-reactjs.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/10 linkedIn-clone.jpg`,
+      name: "linkedIn Clone",
+      language: "Front-End",
+      gitHub_repo: `https://github.com/praveen00219/linkedIn-Clone-React`,
+      about:
+        "A clone of LinkedIn's interface, implemented using React, Redux, Firebase, SCSS, Ant Design (antd), Axios, and other technologies.",
+    },
+    {
+      demoLink: `https://praveen-makecontactapp-redux-firebase.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/11 makeContact-app.jpg`,
+      name: "MakeContact App",
+      language: "Front-End",
+      gitHub_repo: `https://github.com/praveen00219/redux-firebase-react-project`,
+      about:
+        "A simple and intuitive web application to manage your contacts, including favorite contacts, using Firebase for data storage. Built with React and Redux, this app allows you to view, add, search, and delete contacts, making it easy to keep your contact information organized.",
+    },
+    {
+      demoLink: `https://praveen-google-drive-react.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/12 google-drive-clone.jpg`,
+      name: "Google Drive Clone",
+      language: "Front-End",
+      gitHub_repo: `https://github.com/praveen00219/google-drive-react-firebase`,
+      about:
+        "A Google Drive Clone built with React, Vite, Redux, Tailwind CSS, Styled Components, Material-ui/material-icons, and Firebase. This application enables users to manage files and folders, offering features like file uploads, folder creation, deletion, restoring , and favoriting, along with a fullscreen preview option.",
     },
   ];
 

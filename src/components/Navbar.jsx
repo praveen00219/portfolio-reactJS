@@ -6,7 +6,8 @@ const Navbar = ({ activePage, setActivePage }) => {
       <ul className="navbar-list">
         <li className="navbar-item">
           <button
-            className={`navbar-link ${activePage === "about" ? "active" : ""}`}
+            className={`navbar-link 
+              ${activePage === "about" ? "active" : ""}`}
             onClick={() => setActivePage("about")}
           >
             About
@@ -14,9 +15,8 @@ const Navbar = ({ activePage, setActivePage }) => {
         </li>
         <li className="navbar-item">
           <button
-            className={`navbar-link ${
-              activePage === "education" ? "active" : ""
-            }`}
+            className={`navbar-link 
+              ${activePage === "education" ? "active" : ""}`}
             onClick={() => setActivePage("education")}
           >
             Education
@@ -24,9 +24,8 @@ const Navbar = ({ activePage, setActivePage }) => {
         </li>
         <li className="navbar-item">
           <button
-            className={`navbar-link ${
-              activePage === "projects" ? "active" : ""
-            }`}
+            className={`navbar-link 
+              ${activePage === "projects" ? "active" : ""}`}
             onClick={() => setActivePage("projects")}
           >
             Projects
@@ -34,9 +33,8 @@ const Navbar = ({ activePage, setActivePage }) => {
         </li>
         <li className="navbar-item">
           <button
-            className={`navbar-link ${
-              activePage === "certificates" ? "active" : ""
-            }`}
+            className={`navbar-link 
+              ${activePage === "certificates" ? "active" : ""}`}
             onClick={() => setActivePage("certificates")}
           >
             Certificates
@@ -44,9 +42,8 @@ const Navbar = ({ activePage, setActivePage }) => {
         </li>
         <li className="navbar-item">
           <button
-            className={`navbar-link ${
-              activePage === "contact" ? "active" : ""
-            }`}
+            className={`navbar-link 
+              ${activePage === "contact" ? "active" : ""}`}
             onClick={() => setActivePage("contact")}
           >
             Contact

@@ -5,8 +5,10 @@ const About = ({ onOpenModal }) => {
     {
       name: "LinkedIn Clone (MERN Stack)",
       date: "October, 2024",
+      demoLink: `https://praveen-linked-in-clone-reactjs.netlify.app/`,
+      gitHub_repo: `https://github.com/praveen00219/linkedIn-Clone-React`,
       description:
-        "I developed a LinkedIn clone using the MERN stack, demonstrating my ability to build a fully functional social networking platform. This project showcases my proficiency in both front-end and back-end development, as well as my understanding of real-time data handling and user authentication.",
+        "I developed a LinkedIn clone using the Front-end, demonstrating my ability to build a fully functional social networking platform. This project showcases my proficiency in both front-end and as well as my understanding of real-time data handling and user authentication. A clone of LinkedIn's interface, implemented using React, Redux, Firebase, SCSS, Ant Design (antd), Axios, and other technologies.",
       avatar: "/assets/images/Projects-Things/linkedin.png",
     },
     {
@@ -279,23 +281,31 @@ const About = ({ onOpenModal }) => {
             >
               <div className="content-card" data-testimonials-item>
                 <figure className="testimonials-avatar-box">
-                  <img
-                    src={project.avatar}
-                    alt={project.name}
-                    width="60"
-                    data-testimonials-avatar
-                    className="py-[5px] h-16"
-                  />
+                  <a href={project.demoLink}>
+                    <img
+                      src={project.avatar}
+                      alt={project.name}
+                      width="60"
+                      data-testimonials-avatar
+                      className="py-[5px] h-16"
+                    />
+                  </a>
                 </figure>
                 <h4
                   className="h4 testimonials-item-title mt-3 flex gap-2 items-center"
                   data-testimonials-title
                 >
                   {project.name}
-                  <a className="text-blue-500 underline text-sm" href="">
+                  <a
+                    className="text-blue-500 underline text-sm"
+                    href={project.demoLink}
+                  >
                     Live
                   </a>
-                  <a className="text-yellow-300 ml-2 text-sm" href="">
+                  <a
+                    className="text-yellow-300 ml-2 text-sm"
+                    href={project.gitHub_repo}
+                  >
                     <i className="fa-brands fa-github"></i>
                   </a>
                 </h4>
