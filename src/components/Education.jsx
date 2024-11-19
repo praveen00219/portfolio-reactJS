@@ -18,7 +18,7 @@ const Education = () => {
           <li className="timeline-item">
             <h4 className="h4 timeline-item-title">Geekster </h4>
             <span>Jan, 2024 — Dec, 2024</span>
-            <p className="timeline-text">Full-Stack React-JS Course</p>
+            <p className="timeline-text">Full-Stack Web Development Course</p>
           </li>
 
           <li className="timeline-item">
@@ -68,20 +68,24 @@ const Education = () => {
             <ion-icon name="book-outline"></ion-icon>
           </div>
           <h3 className="h3">
-            Experience <span className="text-gray-500 text-xs">NA</span>
+            Experience <span className="text-gray-500 text-xs"></span>
           </h3>
         </div>
 
-        {/* <ol className="timeline-list">
+        <ol className="timeline-list">
           <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Creative director</h4>
-            <span>2015 — Present</span>
+            <h4 className="h4 timeline-item-title">
+              Software Development Engineer Intern
+            </h4>
+            <p className="text-gray-500">StudentsBoat.com · Internship</p>
+            <span>Nov 2024 — Present</span>
             <p className="timeline-text">
-              Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit
-              atque corrupti, quos dolores et qvuas molestias exceptur.
+              Focusing on developing web applications, tackling front-end and
+              back-end challenges, and contributing to a meaningful project that
+              supports students worldwide.
             </p>
           </li>
-        </ol> */}
+        </ol>
       </section>
 
       {/* <!-- Skills --> */}

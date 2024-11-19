@@ -35,6 +35,9 @@ const About = ({ onOpenModal }) => {
       <section className="about-text">
         <p>
           🎓 Graduated with a BSc from MDS-University in Ajmer (Rajasthan){" "}
+          <br />
+          ✨Currently working as Software Development Engineer Intern at
+          studentsBoat.com.
           <br />✨ Currently learning Full-Stack Web Development at @Geekster.
         </p>
         <p>
