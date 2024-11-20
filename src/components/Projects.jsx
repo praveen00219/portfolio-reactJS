@@ -48,6 +48,14 @@ const Projects = () => {
                   Detailed book information.`,
     },
     {
+      demoLink: `https://praveen-word-connect-reactapp.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/13 wordConnect.jpg`,
+      name: "Word Connect",
+      language: "React",
+      gitHub_repo: `https://github.com/praveen00219/wordConnect-reacts`,
+      about: `The Word Connect project is a fun and interactive word puzzle game where users can connect groups of related words by clicking on them. The game challenges players to identify related words based on categories`,
+    },
+    {
       demoLink: `https://praveen-unsplash-clone.netlify.app/`,
       avatar: `/assets/images/Projects-Things/JavaScript/unsplash clone (Search).jpg`,
       name: "Unsplash clone",
