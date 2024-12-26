@@ -34,11 +34,18 @@ const About = ({ onOpenModal }) => {
       </header>
       <section className="about-text">
         <p>
-          🎓 Graduated with a BSc from MDS-University in Ajmer (Rajasthan){" "}
-          <br />
+          💻 I’ve developed a deep understanding of web technologies,
+          programming languages, and modern frameworks. From designing
+          captivating front-end interfaces to building robust back-end
+          infrastructures, I am driven by a passion for solving complex problems
+          and delivering high-quality solutions.
+        </p>
+        <p>
           ✨Currently working as Software Development Engineer Intern at
           studentsBoat.com.
           <br />✨ Currently learning Full-Stack Web Development at @Geekster.
+          <br />
+          🎓 Graduated with a BSc from MDS-University in Ajmer (Rajasthan){" "}
         </p>
         <p>
           🔧 Hold several certificates in key areas including Git-GitHub,
@@ -56,14 +63,6 @@ const About = ({ onOpenModal }) => {
           Fundamentals" Certification at SCALER-TOPICS and achieved the "Legacy
           JavaScript Algorithms and Data Structures" Developer Certification
           from freeCodeCamp.
-        </p>
-
-        <p>
-          I’ve developed a deep understanding of web technologies, programming
-          languages, and modern frameworks. From designing captivating front-end
-          interfaces to building robust back-end infrastructures, I am driven by
-          a passion for solving complex problems and delivering high-quality
-          solutions.
         </p>
       </section>
 

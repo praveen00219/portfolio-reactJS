@@ -75,9 +75,11 @@ const Education = () => {
         <ol className="timeline-list">
           <li className="timeline-item">
             <h4 className="h4 timeline-item-title">
-              Software Development Engineer Intern
+              Software Development Engineer Intern at StudentsBoat.com
             </h4>
-            <p className="text-gray-500">StudentsBoat.com · Internship</p>
+            <p className="text-gray-500">
+              StudentsBoat.com · Remote · Internship
+            </p>
             <span>Nov 2024 — Present</span>
             <p className="timeline-text">
               Focusing on developing web applications, tackling front-end and
