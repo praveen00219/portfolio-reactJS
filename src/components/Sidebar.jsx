@@ -83,7 +83,7 @@ const Sidebar = () => {
         {/* <!-- Social-List --> */}
         <div className="separator"></div>
         <ul className="social-list">
-          <li className="social-item text-yellow-400">
+          <li className="social-item text-blue-400">
             <a
               href="https://www.linkedin.com/in/praveen219/"
               className="social-link"
@@ -93,7 +93,7 @@ const Sidebar = () => {
             </a>
           </li>
 
-          <li className="social-item">
+          <li className="social-item text-white">
             <a
               href="https://github.com/praveen00219"
               target="_blank"
@@ -131,7 +131,7 @@ const Sidebar = () => {
             </a>
           </li>
 
-          <li className="social-item">
+          <li className="social-item text-red-500">
             <a
               href="https://www.instagram.com/pr.vn21/?utm_source=qr&igsh=MTR5OXNpcjdteHpqcQ%3D%3D"
               className="social-link"
