@@ -24,7 +24,6 @@ const Education = () => {
             <span>Jan, 2024 — Dec, 2024</span>
             <div className="ml-3">
               <p className="timeline-text flex">
-                {/* <img src={arrowIcon} className="w-5" alt="arrowIcon" />{" "} */}
                 Certifications and Co-Curricular Activities:{" "}
                 <a
                   className="ml-4 text-blue-300 underline"
@@ -60,11 +59,11 @@ const Education = () => {
                 </p>
               </div>
               <div className="timeline-text flex items-start">
-                <img src={skillIcon} className="w-3" alt="skillIcon" />{" "}
-                <span>
+                <img src={arrowIcon} className="w-4" alt="arrowIcon" />{" "}
+                <p>
                   Technical Stack Learned: React.js, Node.js, Express.js,
                   MongoDB, Tailwind CSS, Javascript, Docker, Git-GitHub
-                </span>
+                </p>
               </div>
             </div>
           </li>

@@ -1,4 +1,6 @@
 import React from "react";
+import arrowIcon from "/assets/images/arrowhead.png";
+import skillIcon from "/assets/images/icons-skill.png";
 
 const Experience = () => {
   return (
@@ -7,14 +9,13 @@ const Experience = () => {
         <h2 className="h2 article-title">Experience</h2>
       </header>
       {/* <!-- Experience --> */}
-      <section className="timeline">
-        <div className="title-wrapper">
-          <div className="icon-box">
+
+      <section className="skill experience">
+        <div className="title-wrapper mb-2">
+          <div className="icon-box ">
             <ion-icon name="book-outline"></ion-icon>
           </div>
-          <h3 className="h3">
-            Experience <span className="text-gray-500 text-xs"></span>
-          </h3>
+          <h3 className="h3 ml-2">Experience</h3>
         </div>
 
         <ol className="timeline-list">
@@ -22,15 +23,70 @@ const Experience = () => {
             <h4 className="h4 timeline-item-title">
               Software Development Engineer Intern at StudentsBoat.com
             </h4>
-            <p className="text-gray-500">
-              StudentsBoat.com · Remote · Internship
-            </p>
+            <p className="text-gray-400">StudentsBoat.com · Internship</p>
             <span>Nov 2024 — Present</span>
             <p className="timeline-text">
-              Focusing on developing web applications, tackling front-end and
-              back-end challenges, and contributing to a meaningful project that
-              supports students worldwide.
+              Portland, Oregon, United States · Remote
             </p>
+
+            <div className="timeline-text ml-3">
+              <div className="timeline-text flex items-start">
+                <img src={arrowIcon} className="w-4" alt="arrowIcon" />{" "}
+                <p>
+                  Focusing on developing web applications, tackling front-end
+                  and back-end challenges, and contributing to a meaningful
+                  project that supports students worldwide.
+                </p>
+              </div>
+              <div className="timeline-text flex items-start">
+                <img src={arrowIcon} className="w-4" alt="arrowIcon" />{" "}
+                <p>
+                  Enhanced UI/UX: Designed and built a responsive, reusable
+                  component library using React.js and scalable styling,
+                  ensuring a seamless user experience across applications
+                  serving a 10+ million user base.
+                </p>
+              </div>
+              <div className="timeline-text flex items-start">
+                <img src={arrowIcon} className="w-4" alt="arrowIcon" />{" "}
+                <p>
+                  Optimized Performance: Implemented server-side rendering (SSR)
+                  using React.js, resulting in a 40% improvement in SEO rankings
+                  and reducing average page load times to below two seconds for
+                  client-facing applications.
+                </p>
+              </div>
+              <div className="timeline-text flex items-start">
+                <img src={arrowIcon} className="w-4" alt="arrowIcon" />{" "}
+                <p>
+                  Comprehensive Homestay Solutions: Architected and integrated
+                  robust Product Listing and Product Detail pages, incorporating
+                  features, and Landlord & Host Family sign-up, along with
+                  payment gateways and progressive data loading, ensuring
+                  scalability, enhanced security, and zero latency.
+                </p>
+              </div>
+              <div className="timeline-text flex items-start">
+                <img src={arrowIcon} className="w-4" alt="arrowIcon" />{" "}
+                <p>
+                  Cross-Functional Collaboration: Collaborated with
+                  cross-functional teams to solve complex challenges, optimize
+                  performance, and ensure seamless integration of features.
+                  Conducted code reviews and peer programming sessions to
+                  maintain high code quality and foster a collaborative
+                  development environment.
+                </p>
+              </div>
+              <div className="timeline-text flex items-start">
+                <img src={arrowIcon} className="w-4" alt="arrowIcon" />{" "}
+                <p>
+                  Modern Tech Stack Implementation: Utilized React, Bootstrap,
+                  Redux, Reactstrap, SCSS, and Axios to build scalable,
+                  maintainable, and visually appealing components for the
+                  application.
+                </p>
+              </div>
+            </div>
           </li>
         </ol>
       </section>
