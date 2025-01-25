@@ -8,6 +8,7 @@ import Education from "./components/Education.jsx";
 import TestimonialsModal from "./components/TestimonialsModal.jsx";
 import ContactForm from "./components/ContactForm";
 import Certificates from "./components/Certificates";
+import Experience from "./components/Experience";
 
 function App() {
   const [activePage, setActivePage] = useState("about"); // State to manage current page
@@ -36,6 +37,7 @@ function App() {
           <Navbar activePage={activePage} setActivePage={setActivePage} />
           {activePage === "about" && <About onOpenModal={openModal} />}
           {activePage === "education" && <Education />}
+          {activePage === "experience" && <Experience />}
           {activePage === "projects" && <Projects />}
           {activePage === "certificates" && (
             <Certificates onOpenModal={openModal} />

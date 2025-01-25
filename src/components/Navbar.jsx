@@ -25,6 +25,15 @@ const Navbar = ({ activePage, setActivePage }) => {
         <li className="navbar-item">
           <button
             className={`navbar-link 
+              ${activePage === "experience" ? "active" : ""}`}
+            onClick={() => setActivePage("experience")}
+          >
+            Experience
+          </button>
+        </li>
+        <li className="navbar-item">
+          <button
+            className={`navbar-link 
               ${activePage === "projects" ? "active" : ""}`}
             onClick={() => setActivePage("projects")}
           >

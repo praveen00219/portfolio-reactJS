@@ -1,10 +1,12 @@
 import React from "react";
+import arrowIcon from "/assets/images/arrowhead.png";
+import skillIcon from "/assets/images/icons-skill.png";
 
 const Education = () => {
   return (
     <article className="education active" data-page="education">
       <header>
-        <h2 className="h2 article-title">Education/ Skills</h2>
+        <h2 className="h2 article-title">Education</h2>
       </header>
       <section className="timeline">
         <div className="title-wrapper">
@@ -16,9 +18,55 @@ const Education = () => {
 
         <ol className="timeline-list">
           <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Geekster </h4>
+            <h4 className="h4 timeline-item-title">
+              Full-Stack Web Development Course - Geekster (Gurgaon, Haryana)
+            </h4>
             <span>Jan, 2024 — Dec, 2024</span>
-            <p className="timeline-text">Full-Stack Web Development Course</p>
+            <div className="ml-3">
+              <p className="timeline-text flex">
+                {/* <img src={arrowIcon} className="w-5" alt="arrowIcon" />{" "} */}
+                Certifications and Co-Curricular Activities:{" "}
+                <a
+                  className="ml-4 text-blue-300 underline"
+                  href="https://drive.google.com/file/d/1AFr3Ad4WNnLIt6MOIuU5Q0hKQz9XZDov/view?usp=sharing"
+                  target="_blank"
+                >
+                  Certificate Link
+                </a>
+              </p>
+              <div className="timeline-text flex items-start">
+                <img src={arrowIcon} className="w-4" alt="arrowIcon" />{" "}
+                <p>
+                  Completed 500+ data structures and algorithms challenges on
+                  platforms like HackerRank and LeetCode, enhancing efficiency
+                  in algorithm design and data manipulation.
+                </p>
+              </div>
+              <div className="timeline-text flex items-start">
+                <img src={arrowIcon} className="w-4" alt="arrowIcon" />{" "}
+                <p>
+                  Conceptualized a gamified learning platform during three
+                  Geekathons, engaging 60 participants, which improved retention
+                  rates by 25% and earned certifications for both innovative
+                  thinking and teamwork capabilities.
+                </p>
+              </div>
+              <div className="timeline-text flex items-start">
+                <img src={arrowIcon} className="w-4" alt="arrowIcon" />
+                <p>
+                  launch complex projects including Google Drive, LinkedIn,
+                  Gmail, Slack, and E-commerce platforms, alongside 50+
+                  mini-projects.
+                </p>
+              </div>
+              <div className="timeline-text flex items-start">
+                <img src={skillIcon} className="w-3" alt="skillIcon" />{" "}
+                <span>
+                  Technical Stack Learned: React.js, Node.js, Express.js,
+                  MongoDB, Tailwind CSS, Javascript, Docker, Git-GitHub
+                </span>
+              </div>
+            </div>
           </li>
 
           <li className="timeline-item">
@@ -56,140 +104,6 @@ const Education = () => {
               Completed secondary education with 83.33% from RBSE | Board Of
               Secondary Eduation, Rajasthan.
             </p>
-          </li>
-        </ol>
-      </section>
-
-      {/* <!-- Experience --> */}
-
-      <section className="timeline">
-        <div className="title-wrapper">
-          <div className="icon-box">
-            <ion-icon name="book-outline"></ion-icon>
-          </div>
-          <h3 className="h3">
-            Experience <span className="text-gray-500 text-xs"></span>
-          </h3>
-        </div>
-
-        <ol className="timeline-list">
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">
-              Software Development Engineer Intern at StudentsBoat.com
-            </h4>
-            <p className="text-gray-500">
-              StudentsBoat.com · Remote · Internship
-            </p>
-            <span>Nov 2024 — Present</span>
-            <p className="timeline-text">
-              Focusing on developing web applications, tackling front-end and
-              back-end challenges, and contributing to a meaningful project that
-              supports students worldwide.
-            </p>
-          </li>
-        </ol>
-      </section>
-
-      {/* <!-- Skills --> */}
-      <section className="skill">
-        <div className="title-wrapper mb-2">
-          <div className="icon-box ">
-            <ion-icon name="book-outline"></ion-icon>
-          </div>
-          <h3 className="h3 ml-2">Skills</h3>
-        </div>
-        <ol className="timeline-list">
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Programming Languages:</h4>
-            <div className="flex gap-3 flex-wrap mt-3">
-              <img
-                src="/assets/images/tools/html.webp"
-                className="w-16"
-                alt="html"
-              />
-              <img
-                src="/assets/images/tools/css.svg"
-                className="w-16"
-                alt="CSS"
-              />
-              <img
-                src="/assets/images/tools/Java.png"
-                className="w-16"
-                alt="Java"
-              />
-              <img
-                src="/assets/images/tools/JS.webp"
-                className="w-16"
-                alt="JS"
-              />
-              <img
-                src="/assets/images/tools/NodeJS.png"
-                className="w-16"
-                alt="NodeJS"
-              />
-            </div>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Frameworks & Libraries:</h4>
-            <div className="flex gap-3 flex-wrap mt-3">
-              <img
-                src="/assets/images/tools/Tailwindcss.png"
-                className="w-16"
-                alt="Tailwindcss"
-              />
-              <img
-                src="/assets/images/tools/ReactJS.webp"
-                className="w-16"
-                alt="ReactJS"
-              />
-              <img
-                src="/assets/images/tools/ExpressJS.webp"
-                className="w-16"
-                alt="ExpressJS"
-              />
-              <img
-                src="/assets/images/tools/MongoDB.svg"
-                className="w-16"
-                alt="MongoDB"
-              />
-              <img
-                src="/assets/images/tools/firebase.png"
-                className="w-16"
-                alt="firebase"
-              />
-              <img
-                src="/assets/images/tools/cloudinary-icon.png"
-                className="w-16"
-                alt="cloudinary-icon"
-              />
-            </div>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Tools:</h4>
-            <div className="flex gap-3 flex-wrap mt-3">
-              <img
-                src="/assets/images/tools/Git_icon.png"
-                className="w-16"
-                alt="Git_icon"
-              />
-              <img
-                src="/assets/images/tools/gitHub.png"
-                className="w-16"
-                alt="gitHub"
-              />
-              <img
-                src="/assets/images/tools/postman.svg"
-                className="w-16"
-                alt="postman"
-              />
-              <img
-                src="/assets/images/tools/Visual_Studio_Code.png"
-                className="w-16"
-                alt="Visual_Studio_Code"
-              />
-            </div>
           </li>
         </ol>
       </section>

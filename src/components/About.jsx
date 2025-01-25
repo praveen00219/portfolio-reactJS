@@ -1,6 +1,202 @@
 import React from "react";
+// frontend skill tool assets
+import html from "/assets/images/tools/html.webp";
+import css from "/assets/images/tools/css.svg";
+import java from "/assets/images/tools/Java.png";
+import javascript from "/assets/images/tools/JS.webp";
+import tailwindCSS from "/assets/images/tools/Tailwindcss.png";
+import bootstrap from "/assets/images/tools/Bootstrap.png";
+import reactjs from "/assets/images/tools/ReactJS.webp";
+import materialUI from "/assets/images/tools/MaterialUI.png";
+import redux from "/assets/images/tools/Redux.png";
+import sass from "/assets/images/tools/Sass.png";
+import firebase from "/assets/images/tools/firebase.png";
+
+// Backend skill tool assets
+import nodejs from "/assets/images/tools/NodeJS.png";
+import expressjs from "/assets/images/tools/ExpressJS.webp";
+import mongodb from "/assets/images/tools/MongoDB.svg";
+import cloudinary from "/assets/images/tools/cloudinary-icon.png";
+import postman from "/assets/images/tools/postman.svg";
+
+// full stack and other assets tool
+import git from "/assets/images/tools/Git_icon.png";
+import gitHub from "/assets/images/tools/gitHub.png";
+import vsCode from "/assets/images/tools/Visual_Studio_Code.png";
+import bitBucket from "/assets/images/tools/BitBucket.png";
+import aws from "/assets/images/tools/AWS.png";
+import docker from "/assets/images/tools/Docker.png";
 
 const About = ({ onOpenModal }) => {
+  const frontendSkills = [
+    {
+      title: "HTML",
+      logo: html,
+    },
+    {
+      title: "CSS",
+      logo: css,
+    },
+    {
+      title: "Java",
+      logo: java,
+    },
+    {
+      title: "Javascript",
+      logo: javascript,
+    },
+    {
+      title: "Tailwind CSS",
+      logo: tailwindCSS,
+    },
+    {
+      title: "Bootstrap",
+      logo: bootstrap,
+    },
+    {
+      title: "ReactJs",
+      logo: reactjs,
+    },
+    {
+      title: "Redux",
+      logo: redux,
+    },
+    {
+      title: "Material UI",
+      logo: materialUI,
+    },
+    {
+      title: "Sass",
+      logo: sass,
+    },
+    {
+      title: "Firebase",
+      logo: firebase,
+    },
+  ];
+
+  const backendSkills = [
+    {
+      title: "Nodejs",
+      logo: nodejs,
+    },
+    {
+      title: "Expressjs",
+      logo: expressjs,
+    },
+    {
+      title: "Mongodb",
+      logo: mongodb,
+    },
+    {
+      title: "Firebase",
+      logo: firebase,
+    },
+    {
+      title: "Cloudinary",
+      logo: cloudinary,
+    },
+    {
+      title: "Postman",
+      logo: postman,
+    },
+  ];
+
+  const fullStackSill = [
+    {
+      title: "Git",
+      logo: git,
+    },
+    {
+      title: "GitHub",
+      logo: gitHub,
+    },
+    {
+      title: "VS Code",
+      logo: vsCode,
+    },
+    {
+      title: "BitBucket",
+      logo: bitBucket,
+    },
+    {
+      title: "AWS",
+      logo: aws,
+    },
+    {
+      title: "Docker",
+      logo: docker,
+    },
+    {
+      title: "HTML",
+      logo: html,
+    },
+    {
+      title: "CSS",
+      logo: css,
+    },
+    {
+      title: "Java",
+      logo: java,
+    },
+    {
+      title: "Javascript",
+      logo: javascript,
+    },
+    {
+      title: "Tailwind CSS",
+      logo: tailwindCSS,
+    },
+    {
+      title: "Bootstrap",
+      logo: bootstrap,
+    },
+    {
+      title: "ReactJs",
+      logo: reactjs,
+    },
+    {
+      title: "Redux",
+      logo: redux,
+    },
+    {
+      title: "Material UI",
+      logo: materialUI,
+    },
+    {
+      title: "Sass",
+      logo: sass,
+    },
+    {
+      title: "Firebase",
+      logo: firebase,
+    },
+    {
+      title: "Nodejs",
+      logo: nodejs,
+    },
+    {
+      title: "Expressjs",
+      logo: expressjs,
+    },
+    {
+      title: "Mongodb",
+      logo: mongodb,
+    },
+    {
+      title: "Firebase",
+      logo: firebase,
+    },
+    {
+      title: "Cloudinary",
+      logo: cloudinary,
+    },
+    {
+      title: "Postman",
+      logo: postman,
+    },
+  ];
+
   const projects = [
     {
       name: "LinkedIn Clone (MERN Stack)",
@@ -70,6 +266,7 @@ const About = ({ onOpenModal }) => {
       <section className="service">
         <h3 className="h3 service-title">What i'm doing</h3>
         <ul className="service-list">
+          {/* front-end */}
           <li className="service-item">
             <div className="service-icon-box">
               <img
@@ -85,40 +282,19 @@ const About = ({ onOpenModal }) => {
                 and interactive web pages made at a professional level.
               </p>
               <div className="flex gap-3 mt-3">
-                <img
-                  src="/assets/images/tools/html.webp"
-                  className="w-5"
-                  alt="html"
-                />
-                <img
-                  src="/assets/images/tools/css.svg"
-                  className="w-5"
-                  alt="CSS"
-                />
-                <img
-                  src="/assets/images/tools/Java.png"
-                  className="w-5"
-                  alt="Java"
-                />
-                <img
-                  src="/assets/images/tools/JS.webp"
-                  className="w-5"
-                  alt="JS"
-                />
-                <img
-                  src="/assets/images/tools/Tailwindcss.png"
-                  className="w-5"
-                  alt="Tailwindcss"
-                />
-                <img
-                  src="/assets/images/tools/ReactJS.webp"
-                  className="w-5"
-                  alt="ReactJS"
-                />
+                {frontendSkills.map((skill, index) => (
+                  <img
+                    key={index}
+                    src={skill.logo}
+                    className="w-5"
+                    alt={skill.title}
+                  />
+                ))}
               </div>
             </div>
           </li>
 
+          {/* back-end */}
           <li className="service-item">
             <div className="service-icon-box">
               <img
@@ -134,40 +310,19 @@ const About = ({ onOpenModal }) => {
                 and APIs, and designs, implements, and manages databases.
               </p>
               <div className="flex gap-3 mt-3">
-                <img
-                  src="/assets/images/tools/NodeJS.png"
-                  className="w-5"
-                  alt="NodeJS"
-                />
-                <img
-                  src="/assets/images/tools/ExpressJS.webp"
-                  className="w-5"
-                  alt="ExpressJS"
-                />
-                <img
-                  src="/assets/images/tools/MongoDB.svg"
-                  className="w-5"
-                  alt="MongoDB"
-                />
-                <img
-                  src="/assets/images/tools/firebase.png"
-                  className="w-5"
-                  alt="firebase"
-                />
-                <img
-                  src="/assets/images/tools/cloudinary-icon.png"
-                  className="w-5"
-                  alt="cloudinary-icon"
-                />
-                <img
-                  src="/assets/images/tools/postman.svg"
-                  className="w-5"
-                  alt="postman"
-                />
+                {backendSkills.map((skill, index) => (
+                  <img
+                    key={index}
+                    src={skill.logo}
+                    className="w-5"
+                    alt={skill.title}
+                  />
+                ))}
               </div>
             </div>
           </li>
 
+          {/* full-stack */}
           <li className="service-item">
             <div className="service-icon-box">
               <img
@@ -188,83 +343,14 @@ const About = ({ onOpenModal }) => {
                 and review/merge code efficiently.
               </p>
               <div className="flex gap-3 mt-3 flex-wrap">
-                <img
-                  src="/assets/images/tools/html.webp"
-                  className="w-5"
-                  alt="html"
-                />
-                <img
-                  src="/assets/images/tools/css.svg"
-                  className="w-5"
-                  alt="CSS"
-                />
-                <img
-                  src="/assets/images/tools/Java.png"
-                  className="w-5"
-                  alt="Java"
-                />
-                <img
-                  src="/assets/images/tools/JS.webp"
-                  className="w-5"
-                  alt="JS"
-                />
-                <img
-                  src="/assets/images/tools/Tailwindcss.png"
-                  className="w-5"
-                  alt="Tailwindcss"
-                />
-                <img
-                  src="/assets/images/tools/ReactJS.webp"
-                  className="w-5"
-                  alt="ReactJS"
-                />
-
-                <img
-                  src="/assets/images/tools/NodeJS.png"
-                  className="w-5"
-                  alt="NodeJS"
-                />
-                <img
-                  src="/assets/images/tools/ExpressJS.webp"
-                  className="w-5"
-                  alt="ExpressJS"
-                />
-                <img
-                  src="/assets/images/tools/MongoDB.svg"
-                  className="w-5"
-                  alt="MongoDB"
-                />
-                <img
-                  src="/assets/images/tools/firebase.png"
-                  className="w-5"
-                  alt="firebase"
-                />
-                <img
-                  src="/assets/images/tools/cloudinary-icon.png"
-                  className="w-5"
-                  alt="cloudinary-icon"
-                />
-
-                <img
-                  src="/assets/images/tools/Git_icon.png"
-                  className="w-5"
-                  alt="Git_icon"
-                />
-                <img
-                  src="/assets/images/tools/gitHub.png"
-                  className="w-5"
-                  alt="gitHub"
-                />
-                <img
-                  src="/assets/images/tools/postman.svg"
-                  className="w-5"
-                  alt="postman"
-                />
-                <img
-                  src="/assets/images/tools/Visual_Studio_Code.png"
-                  className="w-5"
-                  alt="Visual_Studio_Code"
-                />
+                {fullStackSill.map((skill, index) => (
+                  <img
+                    key={index}
+                    src={skill.logo}
+                    className="w-5"
+                    alt={skill.title}
+                  />
+                ))}
               </div>
             </div>
           </li>
