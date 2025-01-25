@@ -234,14 +234,18 @@ const About = ({ onOpenModal }) => {
           programming languages, and modern frameworks. From designing
           captivating front-end interfaces to building robust back-end
           infrastructures, I am driven by a passion for solving complex problems
-          and delivering high-quality solutions.
+          and delivering high-quality solutions. Skilled in unit testing, and
+          maintaining high-performance systems. Committed to delivering
+          efficient, reliable solutions aligned with organizational goals.
         </p>
         <p>
           ✨Currently working as Software Development Engineer Intern at
           studentsBoat.com.
-          <br />✨ Currently learning Full-Stack Web Development at @Geekster.
+          <br />✨ Successfully completed my Full Stack Web Development Course
+          at Geekster!
           <br />
-          🎓 Graduated with a BSc from MDS-University in Ajmer (Rajasthan){" "}
+          🎓 Graduated from Maharshi Dayanand Saraswati University, Ajmer
+          (Rajasthan){" "}
         </p>
         <p>
           🔧 Hold several certificates in key areas including Git-GitHub,

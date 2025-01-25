@@ -33,16 +33,16 @@ const Education = () => {
                   Certificate Link
                 </a>
               </p>
-              <div className="timeline-text flex items-start">
-                <img src={arrowIcon} className="w-4" alt="arrowIcon" />{" "}
+              <div className="timeline-text flex items-start gap-2">
+                ▫
                 <p>
                   Completed 500+ data structures and algorithms challenges on
                   platforms like HackerRank and LeetCode, enhancing efficiency
                   in algorithm design and data manipulation.
                 </p>
               </div>
-              <div className="timeline-text flex items-start">
-                <img src={arrowIcon} className="w-4" alt="arrowIcon" />{" "}
+              <div className="timeline-text flex items-start gap-2">
+                ▫
                 <p>
                   Conceptualized a gamified learning platform during three
                   Geekathons, engaging 60 participants, which improved retention
@@ -50,19 +50,19 @@ const Education = () => {
                   thinking and teamwork capabilities.
                 </p>
               </div>
-              <div className="timeline-text flex items-start">
-                <img src={arrowIcon} className="w-4" alt="arrowIcon" />
+              <div className="timeline-text flex items-start gap-2">
+                ▫
                 <p>
                   launch complex projects including Google Drive, LinkedIn,
                   Gmail, Slack, and E-commerce platforms, alongside 50+
                   mini-projects.
                 </p>
               </div>
-              <div className="timeline-text flex items-start">
-                <img src={arrowIcon} className="w-4" alt="arrowIcon" />{" "}
+              <div className="timeline-text flex items-start gap-2">
+                ▫
                 <p>
-                  Technical Stack Learned: React.js, Node.js, Express.js,
-                  MongoDB, Tailwind CSS, Javascript, Docker, Git-GitHub
+                  Tech Stack Learned: React.js, Node.js, Express.js, MongoDB,
+                  Tailwind CSS, Javascript, Docker, Git-GitHub
                 </p>
               </div>
             </div>

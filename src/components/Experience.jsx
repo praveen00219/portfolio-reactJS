@@ -1,8 +1,135 @@
 import React from "react";
 import arrowIcon from "/assets/images/arrowhead.png";
-import skillIcon from "/assets/images/icons-skill.png";
+
+// frontend skill tool assets
+import html from "/assets/images/tools/html.webp";
+import css from "/assets/images/tools/css.svg";
+import java from "/assets/images/tools/Java.png";
+import javascript from "/assets/images/tools/JS.webp";
+import tailwindCSS from "/assets/images/tools/Tailwindcss.png";
+import bootstrap from "/assets/images/tools/Bootstrap.png";
+import reactjs from "/assets/images/tools/ReactJS.webp";
+import materialUI from "/assets/images/tools/MaterialUI.png";
+import redux from "/assets/images/tools/Redux.png";
+import sass from "/assets/images/tools/Sass.png";
+import firebase from "/assets/images/tools/firebase.png";
+
+// Backend skill tool assets
+import nodejs from "/assets/images/tools/NodeJS.png";
+import expressjs from "/assets/images/tools/ExpressJS.webp";
+import mongodb from "/assets/images/tools/MongoDB.svg";
+import cloudinary from "/assets/images/tools/cloudinary-icon.png";
+import postman from "/assets/images/tools/postman.svg";
+
+// full stack and other assets tool
+import git from "/assets/images/tools/Git_icon.png";
+import gitHub from "/assets/images/tools/gitHub.png";
+import vsCode from "/assets/images/tools/Visual_Studio_Code.png";
+import bitBucket from "/assets/images/tools/BitBucket.png";
+import aws from "/assets/images/tools/AWS.png";
+import docker from "/assets/images/tools/Docker.png";
 
 const Experience = () => {
+  const programmingLanguages = [
+    {
+      title: "HTML",
+      logo: html,
+    },
+    {
+      title: "CSS",
+      logo: css,
+    },
+    {
+      title: "Java",
+      logo: java,
+    },
+    {
+      title: "Javascript",
+      logo: javascript,
+    },
+  ];
+
+  const frameworks = [
+    {
+      title: "Tailwind CSS",
+      logo: tailwindCSS,
+    },
+    {
+      title: "Bootstrap",
+      logo: bootstrap,
+    },
+    {
+      title: "ReactJs",
+      logo: reactjs,
+    },
+    {
+      title: "Redux",
+      logo: redux,
+    },
+    {
+      title: "Material UI",
+      logo: materialUI,
+    },
+    {
+      title: "Sass",
+      logo: sass,
+    },
+    {
+      title: "Nodejs",
+      logo: nodejs,
+    },
+    {
+      title: "Expressjs",
+      logo: expressjs,
+    },
+  ];
+
+  const database = [
+    {
+      title: "Mongodb",
+      logo: mongodb,
+    },
+    {
+      title: "Firebase",
+      logo: firebase,
+    },
+    {
+      title: "Cloudinary",
+      logo: cloudinary,
+    },
+  ];
+
+  const tools = [
+    {
+      title: "Git",
+      logo: git,
+    },
+    {
+      title: "GitHub",
+      logo: gitHub,
+    },
+    {
+      title: "VS Code",
+      logo: vsCode,
+    },
+    {
+      title: "BitBucket",
+      logo: bitBucket,
+    },
+    {
+      title: "AWS",
+      logo: aws,
+    },
+    {
+      title: "Docker",
+      logo: docker,
+    },
+    {
+      title: "Postman",
+      logo: postman,
+    },
+  ];
+
   return (
     <article className="experience active" data-page="experience">
       <header>
@@ -29,17 +156,17 @@ const Experience = () => {
               Portland, Oregon, United States · Remote
             </p>
 
-            <div className="timeline-text ml-3">
-              <div className="timeline-text flex items-start">
-                <img src={arrowIcon} className="w-4" alt="arrowIcon" />{" "}
+            <div className="timeline-text ml-3 mt-2">
+              <div className="timeline-text flex items-start gap-2">
+                ▫
                 <p>
                   Focusing on developing web applications, tackling front-end
                   and back-end challenges, and contributing to a meaningful
                   project that supports students worldwide.
                 </p>
               </div>
-              <div className="timeline-text flex items-start">
-                <img src={arrowIcon} className="w-4" alt="arrowIcon" />{" "}
+              <div className="timeline-text flex items-start gap-2">
+                ▫
                 <p>
                   Enhanced UI/UX: Designed and built a responsive, reusable
                   component library using React.js and scalable styling,
@@ -47,8 +174,8 @@ const Experience = () => {
                   serving a 10+ million user base.
                 </p>
               </div>
-              <div className="timeline-text flex items-start">
-                <img src={arrowIcon} className="w-4" alt="arrowIcon" />{" "}
+              <div className="timeline-text flex items-start gap-2">
+                ▫
                 <p>
                   Optimized Performance: Implemented server-side rendering (SSR)
                   using React.js, resulting in a 40% improvement in SEO rankings
@@ -56,8 +183,8 @@ const Experience = () => {
                   client-facing applications.
                 </p>
               </div>
-              <div className="timeline-text flex items-start">
-                <img src={arrowIcon} className="w-4" alt="arrowIcon" />{" "}
+              <div className="timeline-text flex items-start gap-2">
+                ▫
                 <p>
                   Comprehensive Homestay Solutions: Architected and integrated
                   robust Product Listing and Product Detail pages, incorporating
@@ -66,8 +193,8 @@ const Experience = () => {
                   scalability, enhanced security, and zero latency.
                 </p>
               </div>
-              <div className="timeline-text flex items-start">
-                <img src={arrowIcon} className="w-4" alt="arrowIcon" />{" "}
+              <div className="timeline-text flex items-start gap-2">
+                ▫
                 <p>
                   Cross-Functional Collaboration: Collaborated with
                   cross-functional teams to solve complex challenges, optimize
@@ -77,8 +204,8 @@ const Experience = () => {
                   development environment.
                 </p>
               </div>
-              <div className="timeline-text flex items-start">
-                <img src={arrowIcon} className="w-4" alt="arrowIcon" />{" "}
+              <div className="timeline-text flex items-start gap-2">
+                ▫
                 <p>
                   Modern Tech Stack Implementation: Utilized React, Bootstrap,
                   Redux, Reactstrap, SCSS, and Axios to build scalable,
@@ -92,7 +219,7 @@ const Experience = () => {
       </section>
 
       {/* <!-- Skills --> */}
-      <header>
+      <header className="mt-2">
         <h2 className="h2 article-title">Skills</h2>
       </header>
       <section className="skill">
@@ -103,96 +230,63 @@ const Experience = () => {
           <h3 className="h3 ml-2">Skills</h3>
         </div>
         <ol className="timeline-list">
+          {/* Programming Languages */}
           <li className="timeline-item">
             <h4 className="h4 timeline-item-title">Programming Languages:</h4>
             <div className="flex gap-3 flex-wrap mt-3">
-              <img
-                src="/assets/images/tools/html.webp"
-                className="w-16"
-                alt="html"
-              />
-              <img
-                src="/assets/images/tools/css.svg"
-                className="w-16"
-                alt="CSS"
-              />
-              <img
-                src="/assets/images/tools/Java.png"
-                className="w-16"
-                alt="Java"
-              />
-              <img
-                src="/assets/images/tools/JS.webp"
-                className="w-16"
-                alt="JS"
-              />
-              <img
-                src="/assets/images/tools/NodeJS.png"
-                className="w-16"
-                alt="NodeJS"
-              />
+              {programmingLanguages.map((lang, index) => (
+                <img
+                  key={`lang${index}`}
+                  src={lang.logo}
+                  className="w-16"
+                  alt={lang.title}
+                />
+              ))}
             </div>
           </li>
 
+          {/* Frameworks */}
           <li className="timeline-item">
             <h4 className="h4 timeline-item-title">Frameworks & Libraries:</h4>
             <div className="flex gap-3 flex-wrap mt-3">
-              <img
-                src="/assets/images/tools/Tailwindcss.png"
-                className="w-16"
-                alt="Tailwindcss"
-              />
-              <img
-                src="/assets/images/tools/ReactJS.webp"
-                className="w-16"
-                alt="ReactJS"
-              />
-              <img
-                src="/assets/images/tools/ExpressJS.webp"
-                className="w-16"
-                alt="ExpressJS"
-              />
-              <img
-                src="/assets/images/tools/MongoDB.svg"
-                className="w-16"
-                alt="MongoDB"
-              />
-              <img
-                src="/assets/images/tools/firebase.png"
-                className="w-16"
-                alt="firebase"
-              />
-              <img
-                src="/assets/images/tools/cloudinary-icon.png"
-                className="w-16"
-                alt="cloudinary-icon"
-              />
+              {frameworks.map((framework, index) => (
+                <img
+                  key={`framework${index}`}
+                  src={framework.logo}
+                  className="w-16"
+                  alt={framework.title}
+                />
+              ))}
             </div>
           </li>
 
+          {/* Data base */}
+          <li className="timeline-item">
+            <h4 className="h4 timeline-item-title">Data Base:</h4>
+            <div className="flex gap-3 flex-wrap mt-3">
+              {database.map((item, index) => (
+                <img
+                  key={`database${index}`}
+                  src={item.logo}
+                  className="w-16"
+                  alt={item.title}
+                />
+              ))}
+            </div>
+          </li>
+
+          {/* tools */}
           <li className="timeline-item">
             <h4 className="h4 timeline-item-title">Tools:</h4>
             <div className="flex gap-3 flex-wrap mt-3">
-              <img
-                src="/assets/images/tools/Git_icon.png"
-                className="w-16"
-                alt="Git_icon"
-              />
-              <img
-                src="/assets/images/tools/gitHub.png"
-                className="w-16"
-                alt="gitHub"
-              />
-              <img
-                src="/assets/images/tools/postman.svg"
-                className="w-16"
-                alt="postman"
-              />
-              <img
-                src="/assets/images/tools/Visual_Studio_Code.png"
-                className="w-16"
-                alt="Visual_Studio_Code"
-              />
+              {tools.map((tool, index) => (
+                <img
+                  key={`tool${index}`}
+                  src={tool.logo}
+                  className="w-16"
+                  alt={tool.title}
+                />
+              ))}
             </div>
           </li>
         </ol>
