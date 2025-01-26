@@ -285,14 +285,19 @@ const About = ({ onOpenModal }) => {
                 The most modern and high-quality, responsive client-side (UI),
                 and interactive web pages made at a professional level.
               </p>
-              <div className="flex gap-3 mt-3">
+              <div className="flex gap-3 mt-3 flex-wrap">
+                <span className="text-md text-gray-300">Tech Stack: </span>
                 {frontendSkills.map((skill, index) => (
-                  <img
-                    key={index}
-                    src={skill.logo}
-                    className="w-5"
-                    alt={skill.title}
-                  />
+                  <div className="relative group" key={index}>
+                    <img
+                      src={skill.logo}
+                      className="w-5 cursor-pointer"
+                      alt={skill.title}
+                    />
+                    <div className="absolute bottom-8 left-1/2 z-50 transform -translate-x-1/2 bg-black text-white text-xs rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                      {skill.title}
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>
@@ -313,14 +318,19 @@ const About = ({ onOpenModal }) => {
                 Handles professional server-side authentication, business logic,
                 and APIs, and designs, implements, and manages databases.
               </p>
-              <div className="flex gap-3 mt-3">
+              <div className="flex gap-3 mt-3 flex-wrap">
+                <span className="text-md text-gray-300">Tech Stack: </span>
                 {backendSkills.map((skill, index) => (
-                  <img
-                    key={index}
-                    src={skill.logo}
-                    className="w-5"
-                    alt={skill.title}
-                  />
+                  <div className="relative group" key={index}>
+                    <img
+                      src={skill.logo}
+                      className="w-5 cursor-pointer"
+                      alt={skill.title}
+                    />
+                    <div className="absolute bottom-8 left-1/2 z-50 transform -translate-x-1/2 bg-black text-white text-xs rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                      {skill.title}
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>
@@ -347,13 +357,18 @@ const About = ({ onOpenModal }) => {
                 and review/merge code efficiently.
               </p>
               <div className="flex gap-3 mt-3 flex-wrap">
+                <span className="text-md text-gray-300">Tech Stack: </span>
                 {fullStackSill.map((skill, index) => (
-                  <img
-                    key={index}
-                    src={skill.logo}
-                    className="w-5"
-                    alt={skill.title}
-                  />
+                  <div className="relative group" key={index}>
+                    <img
+                      src={skill.logo}
+                      className="w-5 h-5 cursor-pointer"
+                      alt={skill.title}
+                    />
+                    <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs rounded-md px-2 py-1 opacity-0 z-50 group-hover:opacity-100 transition-opacity">
+                      {skill.title}
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>

@@ -235,12 +235,15 @@ const Experience = () => {
             <h4 className="h4 timeline-item-title">Programming Languages:</h4>
             <div className="flex gap-3 flex-wrap mt-3">
               {programmingLanguages.map((lang, index) => (
-                <img
-                  key={`lang${index}`}
-                  src={lang.logo}
-                  className="w-16"
-                  alt={lang.title}
-                />
+                <div className="flex flex-col gap-1 items-center">
+                  <img
+                    key={`lang${index}`}
+                    src={lang.logo}
+                    className="w-16 h-16"
+                    alt={lang.title}
+                  />
+                  <small className="text-gray-300">{lang.title}</small>
+                </div>
               ))}
             </div>
           </li>
@@ -250,12 +253,15 @@ const Experience = () => {
             <h4 className="h4 timeline-item-title">Frameworks & Libraries:</h4>
             <div className="flex gap-3 flex-wrap mt-3">
               {frameworks.map((framework, index) => (
-                <img
-                  key={`framework${index}`}
-                  src={framework.logo}
-                  className="w-16"
-                  alt={framework.title}
-                />
+                <div className="flex flex-col gap-1 items-center">
+                  <img
+                    key={`lang${index}`}
+                    src={framework.logo}
+                    className="w-16 h-16"
+                    alt={framework.title}
+                  />
+                  <small className="text-gray-300">{framework.title}</small>
+                </div>
               ))}
             </div>
           </li>
@@ -265,12 +271,15 @@ const Experience = () => {
             <h4 className="h4 timeline-item-title">Data Base:</h4>
             <div className="flex gap-3 flex-wrap mt-3">
               {database.map((item, index) => (
-                <img
-                  key={`database${index}`}
-                  src={item.logo}
-                  className="w-16"
-                  alt={item.title}
-                />
+                <div className="flex flex-col gap-1 items-center">
+                  <img
+                    key={`lang${index}`}
+                    src={item.logo}
+                    className="w-16 h-16"
+                    alt={item.title}
+                  />
+                  <small className="text-gray-300">{item.title}</small>
+                </div>
               ))}
             </div>
           </li>
@@ -280,12 +289,15 @@ const Experience = () => {
             <h4 className="h4 timeline-item-title">Tools:</h4>
             <div className="flex gap-3 flex-wrap mt-3">
               {tools.map((tool, index) => (
-                <img
-                  key={`tool${index}`}
-                  src={tool.logo}
-                  className="w-16"
-                  alt={tool.title}
-                />
+                <div className="flex flex-col gap-1 items-center">
+                  <img
+                    key={`lang${index}`}
+                    src={tool.logo}
+                    className="w-16 h-16"
+                    alt={tool.title}
+                  />
+                  <small className="text-gray-300">{tool.title}</small>
+                </div>
               ))}
             </div>
           </li>
