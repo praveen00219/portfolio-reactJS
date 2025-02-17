@@ -389,6 +389,26 @@ const Projects = () => {
       about:
         "A Funflix Movie App built with React, Context API, and @react-ui/react-icons. This application allows users to browse the latest movies, filter them by different categories, and watch trailers using the TMDB API. The modern UI is designed by me.",
     },
+    {
+      demoLink: `https://zomato-clone-frontend-9g69.onrender.com/`,
+      demoAdminPanel: `https://zomato-clone-admin-jklc.onrender.com/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/16-Zomato-Food-App.jpg`,
+      name: "Zomato Food App",
+      language: "Back-End",
+      gitHub_repo: `https://github.com/praveen00219/Zomato-Clone`,
+      about:
+        "This is a full-stack food delivery application (including an Admin Panel) built using the MERN stack (MongoDB, Express, React, Node.js). It allows users to browse the menu, add food items to their cart, place orders, and view their order history.",
+    },
+    {
+      demoLink: `https://zomato-clone-frontend-9g69.onrender.com/`,
+      demoAdminPanel: `https://zomato-clone-admin-jklc.onrender.com/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/16-Zomato-Food-App.jpg`,
+      name: "Zomato Food App",
+      language: "MERN Stack",
+      gitHub_repo: `https://github.com/praveen00219/Zomato-Clone`,
+      about:
+        "This is a full-stack food delivery application (including an Admin Panel) built using the MERN stack (MongoDB, Express, React, Node.js). It allows users to browse the menu, add food items to their cart, place orders, and view their order history.",
+    },
   ];
 
   // State to track the selected filter
@@ -501,6 +521,15 @@ const Projects = () => {
                     >
                       Live
                     </a>
+                    {project.demoAdminPanel && (
+                      <a
+                        className="text-blue-200 hover:text-blue-400  hover:underline text-sm"
+                        href={project.demoAdminPanel}
+                        target="_blank"
+                      >
+                        Admin
+                      </a>
+                    )}
                     <a
                       className="text-yellow-200 hover:text-yellow-400  ml-2 text-sm"
                       href={project.gitHub_repo}

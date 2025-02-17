@@ -3,6 +3,19 @@ import React from "react";
 function Certificates({ onOpenModal }) {
   const certificatesList = [
     {
+      url: `https://drive.google.com/file/d/1AFr3Ad4WNnLIt6MOIuU5Q0hKQz9XZDov/view?usp=sharing`,
+      img: `/assets/images/Certificates/FullStackWebCertificateGeeksterPraveen.jpg`,
+      _date: `30th December, 2024`,
+      institute: `Geekster`,
+      instituteUrl: `https://www.geekster.in/`,
+      instituteLogo: `/assets/images/Social-Icon/geekster-logo.png`,
+      skill:
+        "Git-Github, HTML, CSS, Tailwind CSS, SCSS, Bootstrap, Java, JavaScript, Chart.js, ReactJs, Redux, Context-API, Firebase, NodeJS, ExpressJs, MongoDB, Multer, Claudanary, Netlify, Render, Postman, AWS, VSCode etc. ",
+      title: "Full Stack Web Application Certificate",
+      about: `Successfully Complete Full Stack Web Course and have
+                      earned this certificate on 30th December 2024.`,
+    },
+    {
       url: `https://certifications.geekster.in/-Xx-DYDop-o0sSaJ5lJnK-geekster.pdf`,
       img: `/assets/images/Certificates/git-github.jpg`,
       _date: `30th May, 2024`,
