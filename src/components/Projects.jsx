@@ -218,6 +218,24 @@ const Projects = () => {
         "A Google Drive Clone built with React, Vite, Redux, Tailwind CSS, Styled Components, Material-ui/material-icons, and Firebase. This application enables users to manage files and folders, offering features like file uploads, folder creation, deletion, restoring , and favoriting, along with a fullscreen preview option.",
     },
     {
+      demoLink: `https://slack-chatbot-r6jw.onrender.com/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/15-Slack-Chat-App.jpg`,
+      name: "Slack Chat App (Front-End)",
+      language: "React",
+      gitHub_repo: `https://github.com/praveen00219/Slack-Chat-App`,
+      about:
+        "A Slack Chat App built with React, Vite, Redux, Tailwind CSS, Styled Components, Material-ui/material-icons, and Firebase. This application enables users to messaging, offering features like channel create, login authentication by google.",
+    },
+    {
+      demoLink: `https://funflix-km14.onrender.com/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/14-funflix-movie-app.jpg`,
+      name: "Funflix Movie App (Front-End)",
+      language: "React",
+      gitHub_repo: `https://github.com/praveen00219/Funflix-The-move-app`,
+      about:
+        "A Funflix Movie App built with React, Context API, and @react-ui/react-icons. This application allows users to browse the latest movies, filter them by different categories, and watch trailers using the TMDB API. The modern UI is designed by me.",
+    },
+    {
       demoLink: `https://praveen-unsplash-clone-reactjs.netlify.app/`,
       avatar: `/assets/images/Projects-Things/ReactJs/1 unsplash Clone.jpg`,
       name: "unsplash-clone",
@@ -352,6 +370,24 @@ const Projects = () => {
       gitHub_repo: `https://github.com/praveen00219/google-drive-react-firebase`,
       about:
         "A Google Drive Clone built with React, Vite, Redux, Tailwind CSS, Styled Components, Material-ui/material-icons, and Firebase. This application enables users to manage files and folders, offering features like file uploads, folder creation, deletion, restoring , and favoriting, along with a fullscreen preview option.",
+    },
+    {
+      demoLink: `https://slack-chatbot-r6jw.onrender.com/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/15-Slack-Chat-App.jpg`,
+      name: "Slack Chat App",
+      language: "Front-End",
+      gitHub_repo: `https://github.com/praveen00219/Slack-Chat-App`,
+      about:
+        "A Slack Chat App built with React, Vite, Redux, Tailwind CSS, Styled Components, Material-ui/material-icons, and Firebase. This application enables users to messaging, offering features like channel create, login authentication by google.",
+    },
+    {
+      demoLink: `https://funflix-km14.onrender.com/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/14-funflix-movie-app.jpg`,
+      name: "Funflix Movie App",
+      language: "Front-End",
+      gitHub_repo: `https://github.com/praveen00219/Funflix-The-move-app`,
+      about:
+        "A Funflix Movie App built with React, Context API, and @react-ui/react-icons. This application allows users to browse the latest movies, filter them by different categories, and watch trailers using the TMDB API. The modern UI is designed by me.",
     },
   ];
 
