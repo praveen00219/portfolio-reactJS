@@ -343,7 +343,15 @@ const Projects = () => {
       about:
         "A Google Drive Clone built with React, Vite, Redux, Tailwind CSS, Styled Components, Material-ui/material-icons, and Firebase. This application enables users to manage files and folders, offering features like file uploads, folder creation, deletion, restoring , and favoriting, along with a fullscreen preview option.",
     },
-
+    {
+      demoLink: `https://waypoint-explorer-app.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/18-waypoint-explorer.jpg`,
+      name: "Waypoint Explorer App (Front-End)",
+      language: "React",
+      gitHub_repo: `https://github.com/praveen00219/Waypoint-Explorer`,
+      about:
+        "Waypoint Mapper is an interactive map-based application that allows users to draw routes, measure distances between waypoints (longitude and latitude), and view detailed waypoint information.",
+    },
     {
       demoLink: `https://praveen-linked-in-clone-reactjs.netlify.app/`,
       avatar: `/assets/images/Projects-Things/ReactJs/10 linkedIn-clone.jpg`,
