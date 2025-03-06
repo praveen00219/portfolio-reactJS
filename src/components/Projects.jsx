@@ -417,6 +417,15 @@ const Projects = () => {
       about:
         "This is a full-stack food delivery application (including an Admin Panel) built using the MERN stack (MongoDB, Express, React, Node.js). It allows users to browse the menu, add food items to their cart, place orders, and view their order history.",
     },
+    {
+      demoLink: `https://expense-tracker-mern-prvn.onrender.com/`,
+      avatar: `/assets/images/Projects-Things/Mern/02-Expense-Tracker-Dash.jpg`,
+      name: "Expense Tracker",
+      language: "MERN Stack",
+      gitHub_repo: `https://github.com/praveen00219/Expense-Tracker-MERN`,
+      about:
+        "The Expense Tracker Application is a full-stack web application that allows users to track their expenses, categorize them, and view summaries. It features user authentication, expense management, and a dashboard with visualizations.",
+    },
   ];
 
   // State to track the selected filter
