@@ -36,6 +36,13 @@ const Education = () => {
               <div className="timeline-text flex items-start gap-2">
                 ▫
                 <p>
+                  Successfully completed a Full Stack Web Development
+                  Certification course – Geekster.
+                </p>
+              </div>
+              <div className="timeline-text flex items-start gap-2">
+                ▫
+                <p>
                   Completed 500+ data structures and algorithms challenges on
                   platforms like HackerRank and LeetCode, enhancing efficiency
                   in algorithm design and data manipulation.
