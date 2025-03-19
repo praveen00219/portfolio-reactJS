@@ -344,6 +344,15 @@ const Projects = () => {
         "A Google Drive Clone built with React, Vite, Redux, Tailwind CSS, Styled Components, Material-ui/material-icons, and Firebase. This application enables users to manage files and folders, offering features like file uploads, folder creation, deletion, restoring , and favoriting, along with a fullscreen preview option.",
     },
     {
+      demoLink: `https://geekconnect-prvn.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/19-geekConnect.jpg`,
+      name: "Geek-Connect",
+      language: "React",
+      gitHub_repo: `https://github.com/praveen00219/Geek-Connect`,
+      about:
+        "Geek-Connect is a modern social media front-end application built using React, Redux, and Material UI, leveraging the DummyJSON API API. This project allows users to interact with posts, like, comment, explore trending hashtags, and view user profiles in a responsive and user-friendly interface.",
+    },
+    {
       demoLink: `https://waypoint-explorer-app.netlify.app/`,
       avatar: `/assets/images/Projects-Things/ReactJs/18-waypoint-explorer.jpg`,
       name: "Waypoint Explorer App (Front-End)",
@@ -387,6 +396,15 @@ const Projects = () => {
       gitHub_repo: `https://github.com/praveen00219/Slack-Chat-App`,
       about:
         "A Slack Chat App built with React, Vite, Redux, Tailwind CSS, Styled Components, Material-ui/material-icons, and Firebase. This application enables users to messaging, offering features like channel create, login authentication by google.",
+    },
+    {
+      demoLink: `https://geekconnect-prvn.netlify.app/`,
+      avatar: `/assets/images/Projects-Things/ReactJs/19-geekConnect.jpg`,
+      name: "Geek-Connect",
+      language: "Front-End",
+      gitHub_repo: `https://github.com/praveen00219/Geek-Connect`,
+      about:
+        "Geek-Connect is a modern social media front-end application built using React, Redux, and Material UI, leveraging the DummyJSON API API. This project allows users to interact with posts, like, comment, explore trending hashtags, and view user profiles in a responsive and user-friendly interface.",
     },
     {
       demoLink: `https://funflix-km14.onrender.com/`,
