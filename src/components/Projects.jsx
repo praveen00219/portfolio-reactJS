@@ -439,7 +439,7 @@ const Projects = () => {
       demoLink: `https://medico-book.onrender.com`,
       demoAdminPanel: `https://medico-book-admin.onrender.com`,
       avatar: `/assets/images/Projects-Things/Mern/03-Medico-doctor-booking-app.jpg`,
-      name: "Medico - Doctor Booking App",
+      name: "Medico App",
       language: "MERN Stack",
       gitHub_repo: `https://github.com/praveen00219/Zomato-Clone`,
       about:
