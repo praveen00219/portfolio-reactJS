@@ -436,6 +436,16 @@ const Projects = () => {
         "This is a full-stack food delivery application (including an Admin Panel) built using the MERN stack (MongoDB, Express, React, Node.js). It allows users to browse the menu, add food items to their cart, place orders, and view their order history.",
     },
     {
+      demoLink: `https://medico-book.onrender.com`,
+      demoAdminPanel: `https://medico-book-admin.onrender.com`,
+      avatar: `/assets/images/Projects-Things/Mern/03-Medico-doctor-booking-app.jpg`,
+      name: "Medico - Doctor Booking App",
+      language: "MERN Stack",
+      gitHub_repo: `https://github.com/praveen00219/Zomato-Clone`,
+      about:
+        "Developed a real-time doctor consultation/booking platform with integrated video calling using ZegoCloud API, enabling secure virtual appointments. Reduced in-person visits by 70%, significantly improving patient accessibility and operational efficiency.",
+    },
+    {
       demoLink: `https://expense-tracker-mern-prvn.onrender.com/`,
       avatar: `/assets/images/Projects-Things/Mern/02-Expense-Tracker-Dash.jpg`,
       name: "Expense Tracker",
