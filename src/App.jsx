@@ -9,6 +9,7 @@ import TestimonialsModal from "./components/TestimonialsModal.jsx";
 import ContactForm from "./components/ContactForm";
 import Certificates from "./components/Certificates";
 import Experience from "./components/Experience";
+import Hero from "./components/Hero";
 
 function App() {
   const [activePage, setActivePage] = useState("about"); // State to manage current page
@@ -32,6 +33,7 @@ function App() {
   return (
     <div className="App">
       <main>
+        {/* <Hero /> */}
         <Sidebar />
         <div className="main-content">
           <Navbar activePage={activePage} setActivePage={setActivePage} />

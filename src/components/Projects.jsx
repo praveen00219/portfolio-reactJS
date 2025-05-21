@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const projects = [
@@ -539,55 +540,68 @@ const Projects = () => {
         {/* Project List */}
         <ul className="project-list">
           {filteredProjects.map((project, index) => (
-            <li
-              className="project-item active"
-              key={"project-item" + index}
-              data-filter-item
-              data-category={project.language}
+            <motion.div
+              key={project.name}
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.001 }}
+              transition={{ duration: 0.4, delay: index * 0.02 }}
+              className="project-card"
             >
-              <a
-                href={project.demoLink}
-                target="_blank"
-                rel="noopener noreferrer"
+              <li
+                className="project-item active"
+                key={"project-item" + index}
+                data-filter-item
+                data-category={project.language}
               >
-                <figure className="project-img">
-                  <div className="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src={project.avatar} alt={project.name} loading="lazy" />
-                </figure>
-                <div className="flex items-center justify-between">
-                  <h4 className="project-title">{project.name}</h4>
-                  <p className="flex gap-2">
-                    <a
-                      className="text-blue-200 hover:text-blue-400  hover:underline text-sm"
-                      href={project.demoLink}
-                      target="_blank"
-                    >
-                      Live
-                    </a>
-                    {project.demoAdminPanel && (
+                <a
+                  href={project.demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <figure className="project-img">
+                    <div className="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src={project.avatar}
+                      alt={project.name}
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div className="flex items-center justify-between">
+                    <h4 className="project-title">{project.name}</h4>
+                    <p className="flex gap-2">
                       <a
                         className="text-blue-200 hover:text-blue-400  hover:underline text-sm"
-                        href={project.demoAdminPanel}
+                        href={project.demoLink}
                         target="_blank"
                       >
-                        Admin
+                        Live
                       </a>
-                    )}
-                    <a
-                      className="text-yellow-200 hover:text-yellow-400  ml-2 text-sm"
-                      href={project.gitHub_repo}
-                      target="_blank"
-                    >
-                      <i className="fa-brands fa-github"></i>
-                    </a>
-                  </p>
-                </div>
-                <p className="project-category">{project.language}</p>
-                <p className="text-xs text-gray-300 px-3">{project.about}</p>
-              </a>
-            </li>
+                      {project.demoAdminPanel && (
+                        <a
+                          className="text-blue-200 hover:text-blue-400  hover:underline text-sm"
+                          href={project.demoAdminPanel}
+                          target="_blank"
+                        >
+                          Admin
+                        </a>
+                      )}
+                      <a
+                        className="text-yellow-200 hover:text-yellow-400  ml-2 text-sm"
+                        href={project.gitHub_repo}
+                        target="_blank"
+                      >
+                        <i className="fa-brands fa-github"></i>
+                      </a>
+                    </p>
+                  </div>
+                  <p className="project-category">{project.language}</p>
+                  <p className="text-xs text-gray-300 px-3">{project.about}</p>
+                </a>
+              </li>
+            </motion.div>
           ))}
         </ul>
       </section>

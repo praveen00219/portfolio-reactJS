@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 // frontend skill tool assets
 import html from "/assets/images/tools/html.webp";
 import css from "/assets/images/tools/css.svg";
@@ -230,12 +232,11 @@ const About = ({ onOpenModal }) => {
       </header>
       <section className="about-text">
         <p>
-          💻 I’ve developed a deep understanding of web technologies,
-          programming languages, and modern frameworks. From designing
-          captivating front-end interfaces to building robust back-end
-          infrastructures, I am driven by a passion for solving complex problems
-          and delivering high-quality solutions. Skilled in unit testing, and
-          maintaining high-performance systems. Committed to delivering
+          💻 A creative Software Developer Engineer expertise in Full Stack,
+          and, specializing in building responsive and scalable web
+          applications. Skilled in unit testing, and maintaining
+          high-performance systems. Committed to delivering efficient, reliable
+          solutions aligned with organizational goals. Committed to delivering
           efficient, reliable solutions aligned with organizational goals.
         </p>
         <p>
@@ -288,16 +289,25 @@ const About = ({ onOpenModal }) => {
               <div className="flex gap-3 mt-3 flex-wrap">
                 <span className="text-md text-gray-300">Tech Stack: </span>
                 {frontendSkills.map((skill, index) => (
-                  <div className="relative group" key={index}>
-                    <img
-                      src={skill.logo}
-                      className="w-5 cursor-pointer"
-                      alt={skill.title}
-                    />
-                    <div className="absolute bottom-8 left-1/2 z-50 transform -translate-x-1/2 bg-black text-white text-xs rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                      {skill.title}
+                  <motion.div
+                    key={skill.title}
+                    initial={{ opacity: 0, y: 60 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.001 }}
+                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                    className="skills"
+                  >
+                    <div className="relative group" key={index}>
+                      <img
+                        src={skill.logo}
+                        className="w-5 cursor-pointer"
+                        alt={skill.title}
+                      />
+                      <div className="absolute bottom-8 left-1/2 z-50 transform -translate-x-1/2 bg-black text-white text-xs rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                        {skill.title}
+                      </div>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
@@ -321,16 +331,25 @@ const About = ({ onOpenModal }) => {
               <div className="flex gap-3 mt-3 flex-wrap">
                 <span className="text-md text-gray-300">Tech Stack: </span>
                 {backendSkills.map((skill, index) => (
-                  <div className="relative group" key={index}>
-                    <img
-                      src={skill.logo}
-                      className="w-5 cursor-pointer"
-                      alt={skill.title}
-                    />
-                    <div className="absolute bottom-8 left-1/2 z-50 transform -translate-x-1/2 bg-black text-white text-xs rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                      {skill.title}
+                  <motion.div
+                    key={skill.title}
+                    initial={{ opacity: 0, y: 60 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.001 }}
+                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                    className="skills"
+                  >
+                    <div className="relative group" key={index}>
+                      <img
+                        src={skill.logo}
+                        className="w-5 cursor-pointer"
+                        alt={skill.title}
+                      />
+                      <div className="absolute bottom-8 left-1/2 z-50 transform -translate-x-1/2 bg-black text-white text-xs rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                        {skill.title}
+                      </div>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
@@ -359,16 +378,25 @@ const About = ({ onOpenModal }) => {
               <div className="flex gap-3 mt-3 flex-wrap">
                 <span className="text-md text-gray-300">Tech Stack: </span>
                 {fullStackSill.map((skill, index) => (
-                  <div className="relative group" key={index}>
-                    <img
-                      src={skill.logo}
-                      className="w-5 h-5 cursor-pointer"
-                      alt={skill.title}
-                    />
-                    <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs rounded-md px-2 py-1 opacity-0 z-50 group-hover:opacity-100 transition-opacity">
-                      {skill.title}
+                  <motion.div
+                    key={skill.title}
+                    initial={{ opacity: 0, y: 60 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.001 }}
+                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                    className="skills"
+                  >
+                    <div className="relative group" key={index}>
+                      <img
+                        src={skill.logo}
+                        className="w-5 h-5 cursor-pointer"
+                        alt={skill.title}
+                      />
+                      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs rounded-md px-2 py-1 opacity-0 z-50 group-hover:opacity-100 transition-opacity">
+                        {skill.title}
+                      </div>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>

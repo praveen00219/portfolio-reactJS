@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
+import MyAvtar from "/assets/images/my-avatar.png";
 
 const Sidebar = () => {
   const [isActive, setIsActive] = useState(false); // Track if sidebar is open or closed
@@ -6,11 +8,42 @@ const Sidebar = () => {
   // Function to toggle sidebar visibility
   const toggleSidebar = () => setIsActive(!isActive);
 
+  const socialLinks = [
+    {
+      name: "LinkedIn",
+      href: "https://www.linkedin.com/in/praveen219/",
+      icon: <i className="fa-brands fa-linkedin"></i>,
+      className: "text-blue-400",
+    },
+    {
+      name: "GitHub",
+      href: "https://github.com/praveen00219",
+      icon: <i className="fa-brands fa-github"></i>,
+      className: "text-white",
+    },
+    {
+      name: "LeetCode",
+      href: "https://leetcode.com/u/Prvn21/",
+      image: "/assets/images/Social-Icon/leetcode-logo.png",
+    },
+    {
+      name: "HackerRank",
+      href: "https://www.hackerrank.com/profile/paru2192000",
+      image: "/assets/images/Social-Icon/Hackerrank_logo.webp",
+    },
+    {
+      name: "Instagram",
+      href: "https://www.instagram.com/pr.vn21/?utm_source=qr&igsh=MTR5OXNpcjdteHpqcQ%3D%3D",
+      icon: <ion-icon name="logo-instagram"></ion-icon>,
+      className: "text-red-500",
+    },
+  ];
+
   return (
     <aside className={`sidebar ${isActive ? "active" : ""}`} data-sidebar>
       <div className="sidebar-info">
         <figure className="avatar-box">
-          <img src="/assets/images/my-avatar.png" alt="Praveen" width="80" />
+          <img src={MyAvtar} alt="Praveen" width="80" />
         </figure>
         <div className="info-content">
           <h1 className="name" title="Richard hanrick">
@@ -87,64 +120,35 @@ const Sidebar = () => {
         {/* <!-- Social-List --> */}
         <div className="separator"></div>
         <ul className="social-list">
-          <li className=" text-white text-md">Follow:</li>
-          <li className="social-item text-blue-400">
-            <a
-              href="https://www.linkedin.com/in/praveen219/"
-              className="social-link"
-              target="_blank"
-            >
-              <i className="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
+          <li className="text-white text-md">Follow:</li>
 
-          <li className="social-item text-white">
-            <a
-              href="https://github.com/praveen00219"
-              target="_blank"
-              className="social-link"
+          {socialLinks.map((link, index) => (
+            <motion.li
+              key={link.name}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              className={`social-item ${link.className || ""}`}
             >
-              <i className="fa-brands fa-github"></i>
-            </a>
-          </li>
-
-          <li className="social-item">
-            <a
-              href="https://leetcode.com/u/Prvn21/"
-              target="_blank"
-              className="social-link"
-            >
-              <img
-                src="/assets/images/Social-Icon/leetcode-logo.png"
-                className="w-5"
-                alt="leetcode-logo-icon"
-              />
-            </a>
-          </li>
-
-          <li className="social-item">
-            <a
-              href="https://www.hackerrank.com/profile/paru2192000"
-              className="social-link"
-              target="_blank"
-            >
-              <img
-                src="/assets/images/Social-Icon/Hackerrank_logo.webp"
-                className="w-5"
-                alt="Hackerrank_logo-icon"
-              />
-            </a>
-          </li>
-
-          <li className="social-item text-red-500">
-            <a
-              href="https://www.instagram.com/pr.vn21/?utm_source=qr&igsh=MTR5OXNpcjdteHpqcQ%3D%3D"
-              className="social-link"
-              target="_blank"
-            >
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
+              <a
+                href={link.href}
+                className="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {link.icon ? (
+                  link.icon
+                ) : (
+                  <img
+                    src={link.image}
+                    className="w-5"
+                    alt={`${link.name}-icon`}
+                  />
+                )}
+              </a>
+            </motion.li>
+          ))}
         </ul>
       </div>
     </aside>

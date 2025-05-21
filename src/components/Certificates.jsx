@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function Certificates({ onOpenModal }) {
   const certificatesList = [
@@ -144,43 +145,54 @@ function Certificates({ onOpenModal }) {
         <section className="blog-posts">
           <ul className="blog-posts-list">
             {certificatesList.map((certificate, index) => (
-              <li key={"certificate" + index} className="blog-post-item">
-                <a href={certificate.url} target="_blank">
-                  <figure className="blog-banner-box">
-                    <img
-                      src={certificate.img}
-                      alt={certificate.title}
-                      loading="lazy"
-                    />
-                  </figure>
-                  <div className="blog-content">
-                    <h3 className="h3 blog-item-title">{certificate.title}</h3>
-                    <div className="blog-meta">
-                      <span className="dot"></span>
-                      <a href={certificate.instituteUrl}>
-                        <img
-                          className="h-5 rounded"
-                          src={certificate.instituteLogo}
-                          alt={certificate.institute}
-                        />
-                      </a>
-                      <p
-                        className="text-xs text-gray-400"
-                        datetime="2024-05-30"
-                      >
-                        {certificate.institute} | {certificate._date}
-                      </p>
-                    </div>
-                    <div className="blog-meta items-start">
-                      <span className="dot mt-2"></span>
-                      <div className="text-sm text-gray-400 ">
-                        <p> Skills : {certificate.skill}</p>
+              <motion.div
+                key={certificate.title}
+                initial={{ opacity: 0, y: 60 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.001 }}
+                transition={{ duration: 0.4, delay: index * 0.02 }}
+                className="project-card"
+              >
+                <li key={"certificate" + index} className="blog-post-item">
+                  <a href={certificate.url} target="_blank">
+                    <figure className="blog-banner-box">
+                      <img
+                        src={certificate.img}
+                        alt={certificate.title}
+                        loading="lazy"
+                      />
+                    </figure>
+                    <div className="blog-content">
+                      <h3 className="h3 blog-item-title">
+                        {certificate.title}
+                      </h3>
+                      <div className="blog-meta">
+                        <span className="dot"></span>
+                        <a href={certificate.instituteUrl}>
+                          <img
+                            className="h-5 rounded"
+                            src={certificate.instituteLogo}
+                            alt={certificate.institute}
+                          />
+                        </a>
+                        <p
+                          className="text-xs text-gray-400"
+                          datetime="2024-05-30"
+                        >
+                          {certificate.institute} | {certificate._date}
+                        </p>
                       </div>
+                      <div className="blog-meta items-start">
+                        <span className="dot mt-2"></span>
+                        <div className="text-sm text-gray-400 ">
+                          <p> Skills : {certificate.skill}</p>
+                        </div>
+                      </div>
+                      <p className="blog-text">{certificate.about}</p>
                     </div>
-                    <p className="blog-text">{certificate.about}</p>
-                  </div>
-                </a>
-              </li>
+                  </a>
+                </li>
+              </motion.div>
             ))}
           </ul>
         </section>

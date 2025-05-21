@@ -1,5 +1,6 @@
 import React from "react";
 import arrowIcon from "/assets/images/arrowhead.png";
+import { motion } from "framer-motion";
 
 // frontend skill tool assets
 import html from "/assets/images/tools/html.webp";
@@ -235,15 +236,24 @@ const Experience = () => {
             <h4 className="h4 timeline-item-title">Programming Languages:</h4>
             <div className="flex gap-3 flex-wrap mt-3">
               {programmingLanguages.map((lang, index) => (
-                <div className="flex flex-col gap-1 items-center">
-                  <img
-                    key={`lang${index}`}
-                    src={lang.logo}
-                    className="w-16 h-16"
-                    alt={lang.title}
-                  />
-                  <small className="text-gray-300">{lang.title}</small>
-                </div>
+                <motion.div
+                  key={lang.title}
+                  initial={{ opacity: 0, y: 60 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.001 }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  className="skill"
+                >
+                  <div className="flex flex-col gap-1 items-center">
+                    <img
+                      key={`lang${index}`}
+                      src={lang.logo}
+                      className="w-16 h-16"
+                      alt={lang.title}
+                    />
+                    <small className="text-gray-300">{lang.title}</small>
+                  </div>
+                </motion.div>
               ))}
             </div>
           </li>
@@ -253,15 +263,24 @@ const Experience = () => {
             <h4 className="h4 timeline-item-title">Frameworks & Libraries:</h4>
             <div className="flex gap-3 flex-wrap mt-3">
               {frameworks.map((framework, index) => (
-                <div className="flex flex-col gap-1 items-center">
-                  <img
-                    key={`lang${index}`}
-                    src={framework.logo}
-                    className="w-16 h-16"
-                    alt={framework.title}
-                  />
-                  <small className="text-gray-300">{framework.title}</small>
-                </div>
+                <motion.div
+                  key={framework.title}
+                  initial={{ opacity: 0, y: 60 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.001 }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  className="skill"
+                >
+                  <div className="flex flex-col gap-1 items-center">
+                    <img
+                      key={`lang${index}`}
+                      src={framework.logo}
+                      className="w-16 h-16"
+                      alt={framework.title}
+                    />
+                    <small className="text-gray-300">{framework.title}</small>
+                  </div>
+                </motion.div>
               ))}
             </div>
           </li>
@@ -271,15 +290,24 @@ const Experience = () => {
             <h4 className="h4 timeline-item-title">Data Base:</h4>
             <div className="flex gap-3 flex-wrap mt-3">
               {database.map((item, index) => (
-                <div className="flex flex-col gap-1 items-center">
-                  <img
-                    key={`lang${index}`}
-                    src={item.logo}
-                    className="w-16 h-16"
-                    alt={item.title}
-                  />
-                  <small className="text-gray-300">{item.title}</small>
-                </div>
+                <motion.div
+                  key={item.title}
+                  initial={{ opacity: 0, y: 60 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.001 }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  className="skill"
+                >
+                  <div className="flex flex-col gap-1 items-center">
+                    <img
+                      key={`lang${index}`}
+                      src={item.logo}
+                      className="w-16 h-16"
+                      alt={item.title}
+                    />
+                    <small className="text-gray-300">{item.title}</small>
+                  </div>
+                </motion.div>
               ))}
             </div>
           </li>
@@ -289,15 +317,24 @@ const Experience = () => {
             <h4 className="h4 timeline-item-title">Tools:</h4>
             <div className="flex gap-3 flex-wrap mt-3">
               {tools.map((tool, index) => (
-                <div className="flex flex-col gap-1 items-center">
-                  <img
-                    key={`lang${index}`}
-                    src={tool.logo}
-                    className="w-16 h-16"
-                    alt={tool.title}
-                  />
-                  <small className="text-gray-300">{tool.title}</small>
-                </div>
+                <motion.div
+                  key={tool.title}
+                  initial={{ opacity: 0, y: 60 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.001 }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  className="skill"
+                >
+                  <div className="flex flex-col gap-1 items-center">
+                    <img
+                      key={`lang${index}`}
+                      src={tool.logo}
+                      className="w-16 h-16"
+                      alt={tool.title}
+                    />
+                    <small className="text-gray-300">{tool.title}</small>
+                  </div>
+                </motion.div>
               ))}
             </div>
           </li>
