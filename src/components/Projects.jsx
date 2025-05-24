@@ -549,7 +549,7 @@ const Projects = () => {
               className="project-card"
             >
               <li
-                className="project-item active"
+                className="project-item active gradient-bg-hover"
                 key={"project-item" + index}
                 data-filter-item
                 data-category={project.language}
@@ -569,7 +569,7 @@ const Projects = () => {
                       loading="lazy"
                     />
                   </figure>
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between pr-3">
                     <h4 className="project-title">{project.name}</h4>
                     <p className="flex gap-2">
                       <a
@@ -578,6 +578,7 @@ const Projects = () => {
                         target="_blank"
                       >
                         Live
+                        {/* <i className="fa-solid fa-up-right-from-square"></i> */}
                       </a>
                       {project.demoAdminPanel && (
                         <a
@@ -598,7 +599,9 @@ const Projects = () => {
                     </p>
                   </div>
                   <p className="project-category">{project.language}</p>
-                  <p className="text-xs text-gray-300 px-3">{project.about}</p>
+                  <p className="text-xs text-gray-300 px-3 pb-3">
+                    {project.about}
+                  </p>
                 </a>
               </li>
             </motion.div>

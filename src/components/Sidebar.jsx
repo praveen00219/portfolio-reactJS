@@ -1,9 +1,37 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import MyAvtar from "/assets/images/my-avatar.png";
 
 const Sidebar = () => {
   const [isActive, setIsActive] = useState(false); // Track if sidebar is open or closed
+
+  const titles = ["Full Stack Web Developer", "Software Developer"];
+  const [text, setText] = useState("");
+  const [titleIndex, setTitleIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentTitle = titles[titleIndex];
+    let typeSpeed = isDeleting ? 50 : 100;
+
+    const typing = setTimeout(() => {
+      setText((prev) =>
+        isDeleting
+          ? currentTitle.substring(0, prev.length - 1)
+          : currentTitle.substring(0, prev.length + 1)
+      );
+
+      if (!isDeleting && text === currentTitle) {
+        setTimeout(() => setIsDeleting(true), 1000);
+      } else if (isDeleting && text === "") {
+        setIsDeleting(false);
+        setTitleIndex((prev) => (prev + 1) % titles.length);
+      }
+    }, typeSpeed);
+
+    return () => clearTimeout(typing);
+  }, [text, isDeleting, titleIndex]);
 
   // Function to toggle sidebar visibility
   const toggleSidebar = () => setIsActive(!isActive);
@@ -49,7 +77,16 @@ const Sidebar = () => {
           <h1 className="name" title="Richard hanrick">
             Praveen
           </h1>
-          <p className="title">Full Stack Web Developer</p>
+          {/* <div>
+            <p className="title">Full Stack Web Developer</p>
+            <p className="title">Software Developer</p>
+          </div> */}
+          <div className="text-[16px] font-semibold text-center h-10">
+            <p className="text-white rounded-lg py-1 px-2 gradient-bg min-w-52 flex justify-center text-center">
+              {text}
+              <span className="blinking-cursor">|</span>
+            </p>
+          </div>
         </div>
         <button
           onClick={toggleSidebar}

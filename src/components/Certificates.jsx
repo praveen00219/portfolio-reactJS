@@ -153,7 +153,10 @@ function Certificates({ onOpenModal }) {
                 transition={{ duration: 0.4, delay: index * 0.02 }}
                 className="project-card"
               >
-                <li key={"certificate" + index} className="blog-post-item">
+                <li
+                  key={"certificate" + index}
+                  className="blog-post-item gradient-bg-hover"
+                >
                   <a href={certificate.url} target="_blank">
                     <figure className="blog-banner-box">
                       <img

@@ -272,7 +272,7 @@ const About = ({ onOpenModal }) => {
         <h3 className="h3 service-title">What i'm doing</h3>
         <ul className="service-list">
           {/* front-end */}
-          <li className="service-item">
+          <li className="service-item gradient-bg-hover">
             <div className="service-icon-box">
               <img
                 src="/assets/images/icon-design.svg"
@@ -314,7 +314,7 @@ const About = ({ onOpenModal }) => {
           </li>
 
           {/* back-end */}
-          <li className="service-item">
+          <li className="service-item gradient-bg-hover">
             <div className="service-icon-box">
               <img
                 src="/assets/images/icon-app.svg"
@@ -356,7 +356,7 @@ const About = ({ onOpenModal }) => {
           </li>
 
           {/* full-stack */}
-          <li className="service-item">
+          <li className="service-item gradient-bg-hover">
             <div className="service-icon-box">
               <img
                 src="/assets/images/icon-dev.svg"
@@ -411,7 +411,7 @@ const About = ({ onOpenModal }) => {
           {projects.map((project, index) => (
             <li
               key={index}
-              className="testimonials-item"
+              className="testimonials-item gradient-bg-hover"
               onClick={() => onOpenModal(project)}
             >
               <div className="content-card" data-testimonials-item>

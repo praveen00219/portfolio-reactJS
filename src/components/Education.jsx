@@ -19,9 +19,11 @@ const Education = () => {
         <ol className="timeline-list">
           <li className="timeline-item">
             <h4 className="h4 timeline-item-title">
-              Full-Stack Web Development Course - Geekster (Gurgaon, Haryana)
+              <span>
+                Full-Stack Web Development Course - Geekster (Gurgaon, Haryana)
+              </span>
             </h4>
-            <span>Jan, 2024 — Dec, 2024</span>
+            <p className="timeline-text">Jan, 2024 — Dec, 2024</p>
             <div className="ml-3">
               <p className="timeline-text flex">
                 Certifications and Co-Curricular Activities:{" "}
@@ -76,39 +78,44 @@ const Education = () => {
           </li>
 
           <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Post Graduaction</h4>
-            <span>Aug, 2022 — Oct, 2025</span>
+            <h4 className="h4 timeline-item-title">
+              <span>Post Graduaction</span>
+            </h4>
+            <p className="timeline-text">Aug, 2022 — Oct, 2025</p>
             <p className="timeline-text">
-              MSc (Maths) from VMOU | Vardhman Mahaveer Open University, Kota
-            </p>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Graduaction</h4>
-            <span>Aug, 2017 — Oct, 2021</span>
-            <p className="timeline-text">
-              BSc (Maths) from MDSU | Maharshi Dayanand Saraswati University,
-              Ajmer.
-            </p>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">High school (12th Board)</h4>
-            <span>Jul, 2016 — May, 2017</span>
-            <p className="timeline-text">
-              Completed senior secondary education with 83.40% from RBSE | Board
-              Of Secondary Eduation, Rajasthan.
+              MSc (Maths) from Vardhman Mahaveer Open University, Kota
             </p>
           </li>
 
           <li className="timeline-item">
             <h4 className="h4 timeline-item-title">
-              Matrix School (10th Board)
+              <span>Graduaction</span>
             </h4>
-            <span>Jul, 2014 — Jun, 2015</span>
+            <p className="timeline-text">Aug, 2017 — Oct, 2021</p>
             <p className="timeline-text">
-              Completed secondary education with 83.33% from RBSE | Board Of
+              BSc (Maths) from Maharshi Dayanand Saraswati University, Ajmer.
+            </p>
+          </li>
+
+          <li className="timeline-item">
+            <h4 className="h4 timeline-item-title">
+              <span>High school (12th Board)</span>
+            </h4>
+            <p className="timeline-text">Jul, 2016 — May, 2017</p>
+            <p className="timeline-text">
+              Completed senior secondary education with 83.40% from Board Of
               Secondary Eduation, Rajasthan.
+            </p>
+          </li>
+
+          <li className="timeline-item">
+            <h4 className="h4 timeline-item-title">
+              <span> Matrix School (10th Board)</span>
+            </h4>
+            <p className="timeline-text">Jul, 2014 — Jun, 2015</p>
+            <p className="timeline-text">
+              Completed secondary education with 83.33% from Board Of Secondary
+              Eduation, Rajasthan.
             </p>
           </li>
         </ol>
