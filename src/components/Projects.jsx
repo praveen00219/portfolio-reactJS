@@ -437,6 +437,15 @@ const Projects = () => {
         "This is a full-stack food delivery application (including an Admin Panel) built using the MERN stack (MongoDB, Express, React, Node.js). It allows users to browse the menu, add food items to their cart, place orders, and view their order history.",
     },
     {
+      demoLink: ``,
+      avatar: `/assets/images/Projects-Things/Mern/MERN_auth.png`,
+      name: "Full Stack Authentication App",
+      language: "MERN Stack",
+      gitHub_repo: `https://github.com/praveen00219/Advanced-Authentication-App`,
+      about:
+        "This is a full-stack authentication project built with React, Vite, Tailwind CSS, Node.js, Express, and MongoDB. It includes a modern frontend with protected routes and backend APIs for user authentication, token management, reset password, OTP and email verification.",
+    },
+    {
       demoLink: `https://medico-book.onrender.com`,
       demoAdminPanel: `https://medico-book-admin.onrender.com`,
       avatar: `/assets/images/Projects-Things/Mern/03-Medico-doctor-booking-app.jpg`,
