@@ -31,7 +31,7 @@ const Navbar = ({ activePage, setActivePage }) => {
             Experience
           </button>
         </li>
-        <li className="navbar-item">
+        <li className="navbar-item relative">
           <button
             className={`navbar-link 
               ${activePage === "projects" ? "active" : ""}`}
@@ -39,6 +39,10 @@ const Navbar = ({ activePage, setActivePage }) => {
           >
             Projects
           </button>
+          {/* Dot Indicator */}
+          <div className="absolute top-1 right-0 text-red-600 text-[26px] leading-none font-bold select-none pointer-events-none hidden md:block">
+            •
+          </div>
         </li>
         <li className="navbar-item">
           <button

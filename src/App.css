@@ -375,6 +375,28 @@ main {
   border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
 }
 
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 4s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);

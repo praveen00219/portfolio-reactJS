@@ -69,18 +69,31 @@ const Sidebar = () => {
 
   return (
     <aside className={`sidebar ${isActive ? "active" : ""}`} data-sidebar>
-      <div className="sidebar-info">
-        <figure className="avatar-box">
-          <img src={MyAvtar} alt="Praveen" width="80" />
+      <div className="sidebar-info relative">
+        <figure className="avatar-box relative">
+          <img
+            src={MyAvtar}
+            alt="Praveen"
+            width="80"
+            className="rounded-full"
+          />
+
+          {/* Floating Box 1 - Hidden on small screens */}
+          <div className="hidden md:block absolute top-[-15px] left-[0px] bg-gradient-to-r from-blue-300 to-indigo-200 text-xs px-2 py-1 rounded-lg shadow-lg animate-float">
+            60+ Live Projects
+          </div>
+
+          {/* Floating Box 2 - Hidden on small screens */}
+          <div className="hidden md:block absolute bottom-[-10px] right-[-20px] bg-gradient-to-r from-purple-200 to-pink-300 text-xs px-2 py-1 rounded-lg shadow-lg animate-float-delayed">
+            7 Months Interning
+          </div>
         </figure>
+
         <div className="info-content">
           <h1 className="name" title="Richard hanrick">
             Praveen
           </h1>
-          {/* <div>
-            <p className="title">Full Stack Web Developer</p>
-            <p className="title">Software Developer</p>
-          </div> */}
+
           <div className="text-[16px] font-semibold text-center h-10">
             <p className="text-white rounded-lg py-1 px-2 gradient-bg min-w-52 flex justify-center text-center">
               {text}
@@ -88,6 +101,7 @@ const Sidebar = () => {
             </p>
           </div>
         </div>
+
         <button
           onClick={toggleSidebar}
           className="info_more-btn"

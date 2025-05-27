@@ -239,32 +239,6 @@ const About = ({ onOpenModal }) => {
           solutions aligned with organizational goals. Committed to delivering
           efficient, reliable solutions aligned with organizational goals.
         </p>
-        <p>
-          ✨Currently working as Software Development Engineer Intern at
-          studentsBoat.com.
-          <br />✨ Successfully completed my Full Stack Web Development Course
-          at Geekster!
-          <br />
-          🎓 Graduated from Maharshi Dayanand Saraswati University, Ajmer
-          (Rajasthan){" "}
-        </p>
-        <p>
-          🔧 Hold several certificates in key areas including Git-GitHub,
-          Building Responsive Pages, Java, JavaScript, and SQL. My
-          certifications come from esteemed platforms like Geekster,
-          freeCodeCamp, and HackerRank.
-        </p>
-        <p>
-          🎓 Completed courses in "Mastering the Java Fundamentals," "Mastering
-          JavaScript Programming," and an SQL course from Geekster, equipping me
-          with a solid foundation in these technologies.
-        </p>
-        <p>
-          🏆 Additionally, I have earned the "Java Course - Mastering the
-          Fundamentals" Certification at SCALER-TOPICS and achieved the "Legacy
-          JavaScript Algorithms and Data Structures" Developer Certification
-          from freeCodeCamp.
-        </p>
       </section>
 
       {/* <!--- service --> */}
