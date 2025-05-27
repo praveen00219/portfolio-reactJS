@@ -558,7 +558,7 @@ const Projects = () => {
               className="project-card"
             >
               <li
-                className="project-item active gradient-bg-hover"
+                className="project-item active gradient-bg-hover  transform hover:scale-105 transition-transform duration-300 ease-in-out"
                 key={"project-item" + index}
                 data-filter-item
                 data-category={project.language}

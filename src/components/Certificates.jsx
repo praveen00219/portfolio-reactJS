@@ -155,7 +155,7 @@ function Certificates({ onOpenModal }) {
               >
                 <li
                   key={"certificate" + index}
-                  className="blog-post-item gradient-bg-hover"
+                  className="blog-post-item gradient-bg-hover transform hover:scale-105 transition-transform duration-300 ease-in-out"
                 >
                   <a href={certificate.url} target="_blank">
                     <figure className="blog-banner-box">

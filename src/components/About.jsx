@@ -231,7 +231,7 @@ const About = ({ onOpenModal }) => {
         <h2 className="h2 article-title">About me</h2>
       </header>
       <section className="about-text">
-        <p>
+        <p className="font-semibold">
           💻 A creative Software Developer Engineer expertise in Full Stack,
           and, specializing in building responsive and scalable web
           applications. Skilled in unit testing, and maintaining
@@ -239,6 +239,43 @@ const About = ({ onOpenModal }) => {
           solutions aligned with organizational goals. Committed to delivering
           efficient, reliable solutions aligned with organizational goals.
         </p>
+        <div className="grid gap-4 md:grid-cols-3 mt-4">
+          {[
+            {
+              icon: "💻",
+              title: "SDE Intern @StudentsBoat.com",
+              desc: "Hands-on experience building real-world software.",
+            },
+            {
+              icon: "📜",
+              title: "Certified in Key Technologies",
+              desc: "Git, Java, JS, SQL via Geekster, freeCodeCamp, HackerRank.",
+            },
+            {
+              icon: "📚",
+              title: "Completed Core Dev Courses",
+              desc: "Java & JS mastery, plus SQL fundamentals from Geekster.",
+            },
+            {
+              icon: "🏅",
+              title: "Recognized Certifications",
+              desc: "Java (Scaler), JS DSA (freeCodeCamp).",
+            },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="about-item-card gradient-bg-hover flex-col p-4 rounded-2xl shadow-md transform hover:scale-105 transition-transform duration-300 ease-in-out"
+            >
+              <div className="text-3xl mb-2">{item.icon}</div>
+              <h3 className="text-lg font-semibold text-gray-200 dark:text-white">
+                {item.title}
+              </h3>
+              <p className="text-sm text-gray-300 dark:text-gray-300">
+                {item.desc}
+              </p>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* <!--- service --> */}
@@ -246,7 +283,7 @@ const About = ({ onOpenModal }) => {
         <h3 className="h3 service-title">What i'm doing</h3>
         <ul className="service-list">
           {/* front-end */}
-          <li className="service-item gradient-bg-hover">
+          <li className="service-item gradient-bg-hover transform hover:scale-105 transition-transform duration-300 ease-in-out">
             <div className="service-icon-box">
               <img
                 src="/assets/images/icon-design.svg"
@@ -288,7 +325,7 @@ const About = ({ onOpenModal }) => {
           </li>
 
           {/* back-end */}
-          <li className="service-item gradient-bg-hover">
+          <li className="service-item gradient-bg-hover transform hover:scale-105 transition-transform duration-300 ease-in-out">
             <div className="service-icon-box">
               <img
                 src="/assets/images/icon-app.svg"
@@ -330,7 +367,7 @@ const About = ({ onOpenModal }) => {
           </li>
 
           {/* full-stack */}
-          <li className="service-item gradient-bg-hover">
+          <li className="service-item gradient-bg-hover transform hover:scale-105 transition-transform duration-300 ease-in-out">
             <div className="service-icon-box">
               <img
                 src="/assets/images/icon-dev.svg"
@@ -385,7 +422,7 @@ const About = ({ onOpenModal }) => {
           {projects.map((project, index) => (
             <li
               key={index}
-              className="testimonials-item gradient-bg-hover"
+              className="testimonials-item gradient-bg-hover transform hover:scale-105 transition-transform duration-300 ease-in-out"
               onClick={() => onOpenModal(project)}
             >
               <div className="content-card" data-testimonials-item>
