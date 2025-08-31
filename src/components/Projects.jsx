@@ -427,6 +427,17 @@ const Projects = () => {
         "This is a full-stack food delivery application (including an Admin Panel) built using the MERN stack (MongoDB, Express, React, Node.js). It allows users to browse the menu, add food items to their cart, place orders, and view their order history.",
     },
     {
+      demoLink: `https://v-talk.onrender.com`,
+      avatar: `/assets/images/Projects-Things/Mern/05_v_talk.jpg`,
+      name: "V Talk App",
+      language: "MERN Stack",
+      gitHub_repo: `https://github.com/praveen00219/V-Talk`,
+      about: `V‑Talk is a modern chat platform with lightning‑fast
+              conversations, powerful group chats, seamless media sharing and
+              emoji reactions. Switch between Light and Dark themes, search your
+              recents, and stay in sync across devices.`,
+    },
+    {
       demoLink: `https://zomato-clone-frontend-9g69.onrender.com/`,
       demoAdminPanel: `https://zomato-clone-admin-jklc.onrender.com/`,
       avatar: `/assets/images/Projects-Things/ReactJs/16-Zomato-Food-App.jpg`,
