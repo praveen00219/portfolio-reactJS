@@ -158,7 +158,7 @@ const Experience = () => {
             </p>
 
             <div className="timeline-text ml-3 mt-2">
-              <div className="timeline-text flex items-start gap-2">
+              <div className="timeline-text flex items-start gap-2 mb-2">
                 ▫
                 <p>
                   Focusing on developing web applications, tackling front-end
@@ -166,52 +166,48 @@ const Experience = () => {
                   project that supports students worldwide.
                 </p>
               </div>
-              <div className="timeline-text flex items-start gap-2">
+              <div className="timeline-text flex items-start gap-2 mb-2">
                 ▫
                 <p>
-                  Enhanced UI/UX: Designed and built a responsive, reusable
-                  component library using React.js and scalable styling,
-                  ensuring a seamless user experience across applications
-                  serving a 10+ million user base.
+                  <strong>Enhanced UI/UX:</strong> Designed and built a responsive, reusable component library using React.js and scalable styling, ensuring a seamless
+                  user experience across applications serving a 100+ thousands user base.
                 </p>
               </div>
-              <div className="timeline-text flex items-start gap-2">
+              <div className="timeline-text flex items-start gap-2 mb-2">
                 ▫
                 <p>
-                  Optimized Performance: Implemented server-side rendering (SSR)
-                  using React.js, resulting in a 40% improvement in SEO rankings
-                  and reducing average page load times to below two seconds for
-                  client-facing applications.
+                <strong>Comprehensive Solutions:</strong> Architected and deployed robust Product Listing and Detail pages, including Landlord & Host Family property
+listing operations, advanced filtering across 30+ categories, secure payment gateway integration, and progressive data loading—delivering
+scalability, security, and low latency.
                 </p>
               </div>
-              <div className="timeline-text flex items-start gap-2">
+              <div className="timeline-text flex items-start gap-2 mb-2">
                 ▫
                 <p>
-                  Comprehensive Homestay Solutions: Architected and integrated
-                  robust Product Listing and Product Detail pages, incorporating
-                  features, and Landlord & Host Family sign-up, along with
-                  payment gateways and progressive data loading, ensuring
-                  scalability, enhanced security, and zero latency.
+                <strong>Backend Functionality:</strong> Built backend services with email OTP-based registration, personalized user profiles, schema design aligned with
+                business requirements, and full property lifecycle operations enabling management of 5K+ property listings.
                 </p>
               </div>
-              <div className="timeline-text flex items-start gap-2">
+              <div className="timeline-text flex items-start gap-2 mb-2">
                 ▫
                 <p>
-                  Cross-Functional Collaboration: Collaborated with
-                  cross-functional teams to solve complex challenges, optimize
-                  performance, and ensure seamless integration of features.
-                  Conducted code reviews and peer programming sessions to
-                  maintain high code quality and foster a collaborative
-                  development environment.
+                <strong>API Development & Integration:</strong> Implemented REST APIs (CRUD) with Swagger documentation, optimized endpoints for performance,
+                and seamlessly integrated them into frontend applications using Axios to ensure smooth data flow.
                 </p>
               </div>
-              <div className="timeline-text flex items-start gap-2">
+              <div className="timeline-text flex items-start gap-2 mb-2">
                 ▫
                 <p>
-                  Modern Tech Stack Implementation: Utilized React, Bootstrap,
-                  Redux, Reactstrap, SCSS, and Axios to build scalable,
-                  maintainable, and visually appealing components for the
-                  application.
+                <strong>Collaboration:</strong> Collaborated with cross-functional teams to solve complex challenges, optimize performance, and ensure seamless
+integration of features. Conducted code reviews and peer programming sessions to maintain high code quality and foster a collaborative
+development environment.
+                </p>
+              </div>
+              <div className="timeline-text flex items-start gap-2 mb-2">
+                ▫
+                <p>
+                <strong>Modern Tech Stack Implementation:</strong> Utilized React.js, Redux, Axios, Node.js, Prisma, PostgreSQL, Toastify, Swagger, Stripe, Postman,
+                Git/GitHub, Azure, Tailwind, SCSS, to build scalable, maintainable, and visually appealing components for the application.
                 </p>
               </div>
             </div>

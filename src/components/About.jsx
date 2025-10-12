@@ -244,7 +244,7 @@ const About = ({ onOpenModal }) => {
             {
               icon: "💻",
               title: "SDE Intern @StudentsBoat.com",
-              desc: "Hands-on experience building real-world software.",
+              desc: "Hands-on experience building real-world software. Worked with new tech stack such as Typescript, Prisma, PostgreSQL, Toastify, Swagger,  Azure, Tailwind, SCSS and Git/GitHub etc.",
             },
             {
               icon: "📜",
@@ -254,7 +254,7 @@ const About = ({ onOpenModal }) => {
             {
               icon: "📚",
               title: "Completed Core Dev Courses",
-              desc: "Java & JS mastery, plus SQL fundamentals from Geekster.",
+              desc: "Java & JS mastery, Git-GitHub, plus SQL fundamentals from Geekster.",
             },
             {
               icon: "🏅",
