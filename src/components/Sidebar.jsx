@@ -85,7 +85,7 @@ const Sidebar = () => {
 
           {/* Floating Box 2 - Hidden on small screens */}
           <div className="hidden md:block absolute bottom-[-10px] right-[-20px] bg-gradient-to-r from-purple-200 to-pink-300 text-xs px-2 py-1 rounded-lg shadow-lg animate-float-delayed">
-            7 Months Interning
+            11 Months Interning
           </div>
         </figure>
 
@@ -157,8 +157,8 @@ const Sidebar = () => {
         <!-- href="YOUR_RESUME_LINK_HERE": Replace this with the direct link to your resume file. -->
         <!-- download="YourName_Resume.pdf": Specifies the name of the file that will be downloaded.  --> */}
         <a
-          href="https://drive.google.com/file/d/12udNf6WwrU6VfsF8kckHjqM-MwZarMcF/view?usp=sharing"
-          download="Praveen_Resume.pdf"
+          href="https://drive.google.com/file/d/1M_rk-j1UNQ95f8k-hy64zxAtcMRqg8XC/view"
+          download="Praveen-Resume.pdf"
           target="_blank"
           className="flex gap-8 items-center text-xs bg-green-500 text-white px-3 py-2 mt-6 rounded-lg shadow-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-blue-300 transition-all duration-300"
         >
