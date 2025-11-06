@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import MyAvtar from "/assets/images/my-avatar.png";
+import StatsDisplay from "./StatsDisplay";
 
 const Sidebar = () => {
   const [isActive, setIsActive] = useState(false); // Track if sidebar is open or closed
@@ -79,14 +80,15 @@ const Sidebar = () => {
           />
 
           {/* Floating Box 1 - Hidden on small screens */}
-          <div className="hidden md:block absolute top-[-15px] left-[0px] bg-gradient-to-r from-blue-300 to-indigo-200 text-xs px-2 py-1 rounded-lg shadow-lg animate-float">
+          {/* <div className="hidden md:block absolute top-[-15px] left-[0px] bg-gradient-to-r from-blue-300 to-indigo-200 text-xs px-2 py-1 rounded-lg shadow-lg animate-float">
             60+ Live Projects
-          </div>
+          </div> */}
 
           {/* Floating Box 2 - Hidden on small screens */}
-          <div className="hidden md:block absolute bottom-[-10px] right-[-20px] bg-gradient-to-r from-purple-200 to-pink-300 text-xs px-2 py-1 rounded-lg shadow-lg animate-float-delayed">
-            11 Months Interning
-          </div>
+          {/* <div className="hidden md:block absolute bottom-[-10px] right-[-20px] bg-gradient-to-r from-purple-200 to-pink-300 text-xs px-2 py-1 rounded-lg shadow-lg animate-float-delayed">
+            15+ Technologies
+            250+ Problems Solved
+          </div> */}
         </figure>
 
         <div className="info-content">
@@ -101,6 +103,8 @@ const Sidebar = () => {
             </p>
           </div>
         </div>
+
+       <StatsDisplay/>
 
         <button
           onClick={toggleSidebar}
