@@ -149,23 +149,55 @@ const Experience = () => {
         <ol className="timeline-list">
           <li className="timeline-item">
             <h4 className="h4 timeline-item-title">
-              Software Development Engineer Intern at StudentsBoat.com
+              Software Development Engineer Intern at NZ Solutions
             </h4>
-            <p className="text-gray-400">StudentsBoat.com · Internship</p>
-            <span>Nov 2024 — Present</span>
+            <p className="text-gray-400">NZ Solutions · Internship</p>
+            <span>September, 2025 — Present</span>
             <p className="timeline-text">
-              Portland, Oregon, United States · Remote
+              Pune, Maharastra · On-site
             </p>
 
             <div className="timeline-text ml-3 mt-2">
               <div className="timeline-text flex items-start gap-2 mb-2">
                 ▫
                 <p>
-                  Focusing on developing web applications, tackling front-end
-                  and back-end challenges, and contributing to a meaningful
-                  project that supports students worldwide.
+                 <strong> Event Registration System:</strong> Built a full-stack registration and admin platform for Tata Communications Leaders’ Meet 2025, enabling 2K+ 
+secure email-verified registrations with flight selection and real-time tracking; developed 15+ React components and 25+ Node.js–MongoDB 
+APIs with JWT-based authentication and role-based access, enhancing efficiency and data accuracy by 60%. 
                 </p>
               </div>
+              
+              <div className="timeline-text flex items-start gap-2 mb-2">
+                ▫
+                <p>
+                <strong>HRMS Development:</strong>  
+ Designed and implemented a full-scale Human Resource Management System managing 1K+ employee records, 
+automating onboarding-to-offboarding workflows; Developed 10+ dynamic frontend modules including Document Verification, Payroll, 
+Salary Template, and Employee Management for HR, plus Company Registration, Expenses, Invoice, Plan Subscription, and Role 
+Management for Super Admin; Integrated 27+ RESTful APIs for real-time data synchronization, improving operational efficiency by 40%. 
+                </p>
+              </div>
+              
+              <div className="timeline-text flex items-start gap-2 mb-2">
+                ▫
+                <p>
+                <strong>Tech Stack Implementation:</strong> React.js, Typescript, Redux, Axios, Node.js, MongoDB, Postman, Git/GitHub, Tailwind CSS. 
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li className="timeline-item">
+            <h4 className="h4 timeline-item-title">
+              Software Development Engineer Intern at StudentsBoat.com
+            </h4>
+            <p className="text-gray-400">StudentsBoat.com · Internship</p>
+            <span>Nov 2024 — September, 2025</span>
+            <p className="timeline-text">
+              Portland, Oregon, United States · Remote
+            </p>
+
+            <div className="timeline-text ml-3 mt-2">
               <div className="timeline-text flex items-start gap-2 mb-2">
                 ▫
                 <p>
