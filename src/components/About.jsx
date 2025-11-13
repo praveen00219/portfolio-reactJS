@@ -243,7 +243,7 @@ const About = ({ onOpenModal }) => {
           {[
             {
               icon: "💻",
-              title: "SDE Intern @StudentsBoat.com",
+              title: "Ex SDE at StudentsBoat Inc.",
               desc: "Hands-on experience building real-world software. Worked with new tech stack such as Typescript, Prisma, PostgreSQL, Toastify, Swagger,  Azure, Tailwind, SCSS and Git/GitHub etc.",
             },
             {

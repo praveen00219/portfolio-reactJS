@@ -149,10 +149,10 @@ const Experience = () => {
         <ol className="timeline-list">
           <li className="timeline-item">
             <h4 className="h4 timeline-item-title">
-              Software Development Engineer Intern at NZ Solutions
+              Software Development Engineer at NZ Solutions
             </h4>
-            <p className="text-gray-400">NZ Solutions · Internship</p>
-            <span>September, 2025 — Present</span>
+            <p className="text-gray-400">NZ Solutions · Full-Time</p>
+            <span>October, 2025 — Present</span>
             <p className="timeline-text">
               Pune, Maharastra · On-site
             </p>
@@ -189,9 +189,9 @@ Management for Super Admin; Integrated 27+ RESTful APIs for real-time data synch
 
           <li className="timeline-item">
             <h4 className="h4 timeline-item-title">
-              Software Development Engineer Intern at StudentsBoat.com
+              Software Development Engineer at StudentsBoat Inc.
             </h4>
-            <p className="text-gray-400">StudentsBoat.com · Internship</p>
+            <p className="text-gray-400">StudentsBoat Inc. · Full-Time</p>
             <span>Nov 2024 — September, 2025</span>
             <p className="timeline-text">
               Portland, Oregon, United States · Remote
