@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import CursorGlowCard from "./CursorGlowCard";
+
+const projectCardClass =
+  "rounded-2xl overflow-hidden bg-white border border-[hsl(214,32%,91%)] shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-[1.02] hover:shadow-[0_16px_48px_rgba(0,0,0,0.09)] hover:border-[hsl(173,58%,85%)]";
 
 const Projects = () => {
   const projects = [
@@ -485,147 +489,162 @@ const Projects = () => {
     setSelectedCategory(category);
   };
 
-  // Filter projects based on the selected category
-  const filteredProjects = projects.filter((project) =>
-    selectedCategory === "All" ? true : project.language === selectedCategory
-  );
+  // Filter projects in real time based on selected category
+  const filteredProjects = projects.filter((project) => {
+    if (selectedCategory === "All") return true;
+    // Support exact match and "React, ChartJs" etc. via includes
+    return project.language.includes(selectedCategory);
+  });
+
+  const categories = [
+    "All",
+    "HTML & CSS",
+    "JavaScript",
+    "React",
+    "Front-End",
+    "Back-End",
+    "MERN Stack",
+  ];
 
   return (
-    <article className="projects active" data-page="projects">
-      <header>
-        <h2 className="h2 article-title">Projects</h2>
+    <article
+      className="projects active relative overflow-hidden rounded-2xl bg-gradient-to-b from-[hsl(0,0%,100%)] to-[hsl(210,20%,98%)]"
+      data-page="projects"
+    >
+      <header className="mb-10 sm:mb-12">
+        <motion.span
+          className="inline-block text-xs font-semibold uppercase tracking-[0.2em] text-[hsl(173,58%,39%)] mb-2"
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+        >
+          Portfolio
+        </motion.span>
+        <motion.h2
+          className="h2 article-title text-[hsl(222,47%,8%)] font-bold tracking-tight"
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.08 }}
+        >
+          Projects
+        </motion.h2>
       </header>
 
       <section className="projects">
         {/* Filter Buttons */}
-        <ul className="filter-list">
-          <li className="filter-item">
-            <button
-              className={selectedCategory === "All" ? "active" : ""}
-              onClick={() => handleFilterClick("All")}
-            >
-              All
-            </button>
-          </li>
-          <li className="filter-item">
-            <button
-              className={selectedCategory === "HTML & CSS" ? "active" : ""}
-              onClick={() => handleFilterClick("HTML & CSS")}
-            >
-              HTML & CSS
-            </button>
-          </li>
-          <li className="filter-item">
-            <button
-              className={selectedCategory === "JavaScript" ? "active" : ""}
-              onClick={() => handleFilterClick("JavaScript")}
-            >
-              JavaScript
-            </button>
-          </li>
-          <li className="filter-item">
-            <button
-              className={selectedCategory === "React" ? "active" : ""}
-              onClick={() => handleFilterClick("React")}
-            >
-              React
-            </button>
-          </li>
-          <li className="filter-item">
-            <button
-              className={selectedCategory === "Front-End" ? "active" : ""}
-              onClick={() => handleFilterClick("Front-End")}
-            >
-              Front-End
-            </button>
-          </li>
-          <li className="filter-item">
-            <button
-              className={selectedCategory === "Back-End" ? "active" : ""}
-              onClick={() => handleFilterClick("Back-End")}
-            >
-              Back-End
-            </button>
-          </li>
-          <li className="filter-item">
-            <button
-              className={selectedCategory === "MERN Stack" ? "active" : ""}
-              onClick={() => handleFilterClick("MERN Stack")}
-            >
-              MERN Stack
-            </button>
-          </li>
-        </ul>
+        <div className="mb-8">
+          <span className="inline-block text-xs font-semibold uppercase tracking-wider text-[hsl(222,25%,45%)] mb-3">
+            Categories
+          </span>
+          <ul className="filter-list !flex flex-wrap gap-2">
+            {categories.map((category, index) => (
+              <motion.li
+                key={category}
+                className="filter-item list-none"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.35, delay: 0.05 * index }}
+              >
+                <button
+                  type="button"
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                    selectedCategory === category
+                      ? "bg-gradient-to-r from-[hsl(173,58%,39%)] to-[hsl(199,89%,48%)] text-white shadow-md"
+                      : "bg-[hsl(210,20%,96%)] text-[hsl(222,25%,35%)] border border-[hsl(214,32%,91%)] hover:border-[hsl(173,58%,85%)] hover:bg-[hsl(173,58%,97%)]"
+                  }`}
+                  onClick={() => handleFilterClick(category)}
+                >
+                  {category}
+                </button>
+              </motion.li>
+            ))}
+          </ul>
+        </div>
 
         {/* Project List */}
-        <ul className="project-list">
-          {filteredProjects.map((project, index) => (
-            <motion.div
-              key={project.name}
-              initial={{ opacity: 0, y: 60 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.001 }}
-              transition={{ duration: 0.4, delay: index * 0.02 }}
-              className="project-card"
-            >
-              <li
-                className="project-item active gradient-bg-hover  transform hover:scale-105 transition-transform duration-300 ease-in-out"
-                key={"project-item" + index}
-                data-filter-item
-                data-category={project.language}
+        <ul className="project-list list-none p-0 m-0 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 relative">
+          <AnimatePresence mode="sync">
+            {filteredProjects.map((project, index) => (
+              <motion.li
+                key={project.name}
+                layout
+                initial={{ opacity: 0, scale: 0.96, y: 16 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.96, position: "absolute" }}
+                transition={{ duration: 0.25, ease: [0.25, 0.46, 0.45, 0.94] }}
+                whileHover={{ y: -6 }}
+                className="project-card"
               >
-                <a
-                  href={project.demoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <figure className="project-img">
-                    <div className="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
+                <CursorGlowCard className={`${projectCardClass} group`}>
+                  <a
+                    href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    <div className="relative h-44 overflow-hidden rounded-t-2xl bg-[hsl(210,20%,95%)]">
+                      <img
+                        src={project.avatar}
+                        alt={project.name}
+                        loading="lazy"
+                        className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <span className="absolute top-3 left-3 px-2.5 py-1 rounded-lg text-xs font-medium bg-white/95 text-[hsl(222,47%,15%)] shadow-sm">
+                        {project.language}
+                      </span>
+                      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/95 text-sm font-medium text-[hsl(222,47%,15%)] shadow-lg">
+                          <ion-icon name="open-outline" class="text-lg" />
+                          View project
+                        </span>
+                      </div>
                     </div>
-                    <img
-                      src={project.avatar}
-                      alt={project.name}
-                      loading="lazy"
-                    />
-                  </figure>
-                  <div className="flex items-center justify-between pr-3">
-                    <h4 className="project-title">{project.name}</h4>
-                    <p className="flex gap-2">
-                      <a
-                        className="text-blue-200 hover:text-blue-400  hover:underline text-sm"
-                        href={project.demoLink}
-                        target="_blank"
-                      >
-                        Live
-                        {/* <i className="fa-solid fa-up-right-from-square"></i> */}
-                      </a>
-                      {project.demoAdminPanel && (
+                    <div className="p-4 sm:p-5 border-l-2 border-[hsl(173,58%,39%)] ml-3 -mt-1">
+                      <h4 className="font-semibold text-[hsl(222,47%,8%)] mb-2 line-clamp-2 transition-colors group-hover:text-[hsl(173,58%,35%)]">
+                        {project.name}
+                      </h4>
+                      <p className="text-sm text-[hsl(222,25%,35%)] leading-relaxed line-clamp-2 mb-4">
+                        {project.about}
+                      </p>
+                      <div className="flex items-center gap-2 flex-wrap" onClick={(e) => e.stopPropagation()}>
                         <a
-                          className="text-blue-200 hover:text-blue-400  hover:underline text-sm"
-                          href={project.demoAdminPanel}
+                          href={project.demoLink}
                           target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-[hsl(199,89%,48%)] text-white hover:opacity-90 transition-opacity"
                         >
-                          Admin
+                          Live
                         </a>
-                      )}
-                      <a
-                        className="text-yellow-200 hover:text-yellow-400  ml-2 text-sm"
-                        href={project.gitHub_repo}
-                        target="_blank"
-                      >
-                        <i className="fa-brands fa-github"></i>
-                      </a>
-                    </p>
-                  </div>
-                  <p className="project-category">{project.language}</p>
-                  <p className="text-xs text-gray-300 px-3 pb-3">
-                    {project.about}
-                  </p>
-                </a>
-              </li>
-            </motion.div>
-          ))}
+                        <a
+                          href={project.gitHub_repo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-[hsl(222,25%,12%)] text-white hover:bg-[hsl(222,25%,22%)] transition-colors"
+                          aria-label="GitHub"
+                        >
+                          <i className="fa-brands fa-github text-sm" />
+                        </a>
+                        {project.demoAdminPanel && (
+                          <a
+                            href={project.demoAdminPanel}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium bg-[hsl(222,25%,20%)] text-white hover:opacity-90"
+                          >
+                            Admin
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  </a>
+                </CursorGlowCard>
+              </motion.li>
+            ))}
+          </AnimatePresence>
         </ul>
       </section>
     </article>

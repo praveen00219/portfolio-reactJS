@@ -1,371 +1,179 @@
 import React from "react";
-import arrowIcon from "/assets/images/arrowhead.png";
 import { motion } from "framer-motion";
+import CursorGlowCard from "./CursorGlowCard";
 
-// frontend skill tool assets
-import html from "/assets/images/tools/html.webp";
-import css from "/assets/images/tools/css.svg";
-import java from "/assets/images/tools/Java.png";
-import javascript from "/assets/images/tools/JS.webp";
-import tailwindCSS from "/assets/images/tools/Tailwindcss.png";
-import bootstrap from "/assets/images/tools/Bootstrap.png";
-import reactjs from "/assets/images/tools/ReactJS.webp";
-import materialUI from "/assets/images/tools/MaterialUI.png";
-import redux from "/assets/images/tools/Redux.png";
-import sass from "/assets/images/tools/Sass.png";
-import firebase from "/assets/images/tools/firebase.png";
-
-// Backend skill tool assets
-import nodejs from "/assets/images/tools/NodeJS.png";
-import expressjs from "/assets/images/tools/ExpressJS.webp";
-import mongodb from "/assets/images/tools/MongoDB.svg";
-import cloudinary from "/assets/images/tools/cloudinary-icon.png";
-import postman from "/assets/images/tools/postman.svg";
-
-// full stack and other assets tool
-import git from "/assets/images/tools/Git_icon.png";
-import gitHub from "/assets/images/tools/gitHub.png";
-import vsCode from "/assets/images/tools/Visual_Studio_Code.png";
-import bitBucket from "/assets/images/tools/BitBucket.png";
-import aws from "/assets/images/tools/AWS.png";
-import docker from "/assets/images/tools/Docker.png";
+const cardClass =
+  "rounded-2xl bg-white p-5 sm:p-6 shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-[1.02] hover:shadow-[0_16px_48px_rgba(0,0,0,0.09)]";
 
 const Experience = () => {
-  const programmingLanguages = [
-    {
-      title: "HTML",
-      logo: html,
-    },
-    {
-      title: "CSS",
-      logo: css,
-    },
-    {
-      title: "Java",
-      logo: java,
-    },
-    {
-      title: "Javascript",
-      logo: javascript,
-    },
-  ];
-
-  const frameworks = [
-    {
-      title: "Tailwind CSS",
-      logo: tailwindCSS,
-    },
-    {
-      title: "Bootstrap",
-      logo: bootstrap,
-    },
-    {
-      title: "ReactJs",
-      logo: reactjs,
-    },
-    {
-      title: "Redux",
-      logo: redux,
-    },
-    {
-      title: "Material UI",
-      logo: materialUI,
-    },
-    {
-      title: "Sass",
-      logo: sass,
-    },
-    {
-      title: "Nodejs",
-      logo: nodejs,
-    },
-    {
-      title: "Expressjs",
-      logo: expressjs,
-    },
-  ];
-
-  const database = [
-    {
-      title: "Mongodb",
-      logo: mongodb,
-    },
-    {
-      title: "Firebase",
-      logo: firebase,
-    },
-    {
-      title: "Cloudinary",
-      logo: cloudinary,
-    },
-  ];
-
-  const tools = [
-    {
-      title: "Git",
-      logo: git,
-    },
-    {
-      title: "GitHub",
-      logo: gitHub,
-    },
-    {
-      title: "VS Code",
-      logo: vsCode,
-    },
-    {
-      title: "BitBucket",
-      logo: bitBucket,
-    },
-    {
-      title: "AWS",
-      logo: aws,
-    },
-    {
-      title: "Docker",
-      logo: docker,
-    },
-    {
-      title: "Postman",
-      logo: postman,
-    },
-  ];
-
   return (
-    <article className="experience active" data-page="experience">
-      <header>
-        <h2 className="h2 article-title">Experience</h2>
+    <article
+      className="experience active relative overflow-hidden rounded-2xl bg-gradient-to-b from-[hsl(0,0%,100%)] to-[hsl(210,20%,98%)]"
+      data-page="experience"
+    >
+      <header className="mb-10 sm:mb-12">
+        <motion.span
+          className="inline-block text-xs font-semibold uppercase tracking-[0.2em] text-[hsl(173,58%,39%)] mb-2"
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+        >
+          Work history
+        </motion.span>
+        <motion.h2
+          className="h2 article-title text-[hsl(222,47%,8%)] font-bold tracking-tight"
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.08 }}
+        >
+          Experience
+        </motion.h2>
+        
       </header>
-      {/* <!-- Experience --> */}
 
       <section className="skill experience">
-        <div className="title-wrapper mb-2">
-          <div className="icon-box ">
-            <ion-icon name="book-outline"></ion-icon>
-          </div>
-          <h3 className="h3 ml-2">Experience</h3>
-        </div>
 
         <ol className="timeline-list">
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">
-              Software Development Engineer at NZ Solutions
-            </h4>
-            <p className="text-gray-400">NZ Solutions · Full-Time</p>
-            <span>October, 2025 — Present</span>
-            <p className="timeline-text">
-              Pune, Maharastra · On-site
-            </p>
+          <motion.li
+            className="timeline-item group/card"
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.15 }}
+            transition={{ duration: 0.45, delay: 0 }}
+          >
+            <CursorGlowCard className={cardClass}>
+              <div className="border-l-2 border-[hsl(173,58%,39%)] pl-4 sm:pl-5 -ml-1">
+                <h4 className="h4 timeline-item-title text-[hsl(222,47%,8%)] font-semibold mb-1">
+                  Software Development Engineer at Nrolled Inc.
+                </h4>
+                <p className="text-sm font-medium text-[hsl(173,58%,35%)] timeline-text mb-1">
+                  Nrolled Inc. · Full-Time · December, 2025 — Present
+                </p>
+                <p className="timeline-text text-[hsl(222,25%,32%)] mb-3">
+                  Mississauga, Ontario, Canada · Remote
+                </p>
+                <div className="mt-3 space-y-2">
+                  <div className="timeline-text flex items-start gap-2">
+                    <span className="text-[hsl(173,58%,39%)] mt-0.5">▫</span>
+                    <p className="text-[hsl(222,25%,32%)] leading-relaxed">
+<strong>Nrolled Project:</strong> Designing and implementing a multi-role job marketplace platform, supporting Admin (Web App), Worker (Mobile App), and Customer (Job Poster) modules; Developed 15+ feature-rich modules including Job Posting & Approval, Candidate Applications, Profile & Resume Management, Skill Matching, Notifications, and Role-Based Access Control; Built scalable RESTful APIs to enable real-time job updates, application tracking, and cross-platform data synchronization; Implemented secure authentication, authorization, stripe payment gateway and workflow automation, enhancing hiring efficiency and reducing manual intervention by 45%+.
+                    </p>
+                  </div>
+                  <div className="timeline-text flex items-start gap-2">
+                    <span className="text-[hsl(173,58%,39%)] mt-0.5">▫</span>
+                    <p className="text-[hsl(222,25%,32%)] leading-relaxed">
+                      <strong>Tech Stack Implementation:</strong> React.js, Typescript, .Net, Supabase, Axios, Node.js, Supabase, Firebase, Tailwind CSS, Stripe, Postman, Git-GitHub & Bitbucket
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </CursorGlowCard>
+          </motion.li>
 
-            <div className="timeline-text ml-3 mt-2">
-              <div className="timeline-text flex items-start gap-2 mb-2">
-                ▫
-                <p>
+          <motion.li
+            className="timeline-item group/card"
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.15 }}
+            transition={{ duration: 0.45, delay: 0.08 }}
+          >
+            <CursorGlowCard className={cardClass}>
+              <div className="border-l-2 border-[hsl(173,58%,39%)] pl-4 sm:pl-5 -ml-1">
+                <h4 className="h4 timeline-item-title text-[hsl(222,47%,8%)] font-semibold mb-1">
+                  Software Development Engineer at NZ Solutions
+                </h4>
+                <p className="text-sm font-medium text-[hsl(173,58%,35%)] timeline-text mb-1">
+                  NZ Solutions · Full-Time · September, 2025 — December, 2025
+                </p>
+                <p className="timeline-text text-[hsl(222,25%,32%)] mb-3">
+                  Pune, Maharastra · On-site
+                </p>
+                <div className="mt-3 space-y-2">
+                  <div className="timeline-text flex items-start gap-2">
+                    <span className="text-[hsl(173,58%,39%)] mt-0.5">▫</span>
+                    <p className="text-[hsl(222,25%,32%)] leading-relaxed">
                  <strong> Event Registration System:</strong> Built a full-stack registration and admin platform for Tata Communications Leaders’ Meet 2025, enabling 2K+ 
 secure email-verified registrations with flight selection and real-time tracking; developed 15+ React components and 25+ Node.js–MongoDB 
 APIs with JWT-based authentication and role-based access, enhancing efficiency and data accuracy by 60%. 
                 </p>
               </div>
               
-              <div className="timeline-text flex items-start gap-2 mb-2">
-                ▫
-                <p>
-                <strong>HRMS Development:</strong>  
- Designed and implemented a full-scale Human Resource Management System managing 1K+ employee records, 
-automating onboarding-to-offboarding workflows; Developed 10+ dynamic frontend modules including Document Verification, Payroll, 
-Salary Template, and Employee Management for HR, plus Company Registration, Expenses, Invoice, Plan Subscription, and Role 
-Management for Super Admin; Integrated 27+ RESTful APIs for real-time data synchronization, improving operational efficiency by 40%. 
-                </p>
-              </div>
-              
-              <div className="timeline-text flex items-start gap-2 mb-2">
-                ▫
-                <p>
-                <strong>Tech Stack Implementation:</strong> React.js, Typescript, Redux, Axios, Node.js, MongoDB, Postman, Git/GitHub, Tailwind CSS. 
-                </p>
-              </div>
-            </div>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">
-              Software Development Engineer at StudentsBoat Inc.
-            </h4>
-            <p className="text-gray-400">StudentsBoat Inc. · Full-Time</p>
-            <span>Nov 2024 — September, 2025</span>
-            <p className="timeline-text">
-              Portland, Oregon, United States · Remote
-            </p>
-
-            <div className="timeline-text ml-3 mt-2">
-              <div className="timeline-text flex items-start gap-2 mb-2">
-                ▫
-                <p>
-                  <strong>Enhanced UI/UX:</strong> Designed and built a responsive, reusable component library using React.js and scalable styling, ensuring a seamless
-                  user experience across applications serving a 100+ thousands user base.
-                </p>
-              </div>
-              <div className="timeline-text flex items-start gap-2 mb-2">
-                ▫
-                <p>
-                <strong>Comprehensive Solutions:</strong> Architected and deployed robust Product Listing and Detail pages, including Landlord & Host Family property
-listing operations, advanced filtering across 30+ categories, secure payment gateway integration, and progressive data loading—delivering
-scalability, security, and low latency.
-                </p>
-              </div>
-              <div className="timeline-text flex items-start gap-2 mb-2">
-                ▫
-                <p>
-                <strong>Backend Functionality:</strong> Built backend services with email OTP-based registration, personalized user profiles, schema design aligned with
-                business requirements, and full property lifecycle operations enabling management of 5K+ property listings.
-                </p>
-              </div>
-              <div className="timeline-text flex items-start gap-2 mb-2">
-                ▫
-                <p>
-                <strong>API Development & Integration:</strong> Implemented REST APIs (CRUD) with Swagger documentation, optimized endpoints for performance,
-                and seamlessly integrated them into frontend applications using Axios to ensure smooth data flow.
-                </p>
-              </div>
-              <div className="timeline-text flex items-start gap-2 mb-2">
-                ▫
-                <p>
-                <strong>Collaboration:</strong> Collaborated with cross-functional teams to solve complex challenges, optimize performance, and ensure seamless
-integration of features. Conducted code reviews and peer programming sessions to maintain high code quality and foster a collaborative
-development environment.
-                </p>
-              </div>
-              <div className="timeline-text flex items-start gap-2 mb-2">
-                ▫
-                <p>
-                <strong>Modern Tech Stack Implementation:</strong> Utilized React.js, Redux, Axios, Node.js, Prisma, PostgreSQL, Toastify, Swagger, Stripe, Postman,
-                Git/GitHub, Azure, Tailwind, SCSS, to build scalable, maintainable, and visually appealing components for the application.
-                </p>
-              </div>
-            </div>
-          </li>
-        </ol>
-      </section>
-
-      {/* <!-- Skills --> */}
-      <header className="mt-2">
-        <h2 className="h2 article-title">Skills</h2>
-      </header>
-      <section className="skill">
-        <div className="title-wrapper mb-2">
-          <div className="icon-box ">
-            <ion-icon name="book-outline"></ion-icon>
-          </div>
-          <h3 className="h3 ml-2">Skills</h3>
-        </div>
-        <ol className="timeline-list">
-          {/* Programming Languages */}
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Programming Languages:</h4>
-            <div className="flex gap-3 flex-wrap mt-3">
-              {programmingLanguages.map((lang, index) => (
-                <motion.div
-                  key={lang.title}
-                  initial={{ opacity: 0, y: 60 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.001 }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="skill"
-                >
-                  <div className="flex flex-col gap-1 items-center">
-                    <img
-                      key={`lang${index}`}
-                      src={lang.logo}
-                      className="w-16 h-16"
-                      alt={lang.title}
-                    />
-                    <small className="text-gray-300">{lang.title}</small>
+                  <div className="timeline-text flex items-start gap-2">
+                    <span className="text-[hsl(173,58%,39%)] mt-0.5">▫</span>
+                    <p className="text-[hsl(222,25%,32%)] leading-relaxed">
+                      <strong>HRMS Development:</strong> Designed and implemented a full-scale Human Resource Management System managing 1K+ employee records, automating onboarding-to-offboarding workflows; Developed 10+ dynamic frontend modules including Document Verification, Payroll, Salary Template, and Employee Management for HR, plus Company Registration, Expenses, Invoice, Plan Subscription, and Role Management for Super Admin; Integrated 27+ RESTful APIs for real-time data synchronization, improving operational efficiency by 40%.
+                    </p>
                   </div>
-                </motion.div>
-              ))}
-            </div>
-          </li>
-
-          {/* Frameworks */}
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Frameworks & Libraries:</h4>
-            <div className="flex gap-3 flex-wrap mt-3">
-              {frameworks.map((framework, index) => (
-                <motion.div
-                  key={framework.title}
-                  initial={{ opacity: 0, y: 60 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.001 }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="skill"
-                >
-                  <div className="flex flex-col gap-1 items-center">
-                    <img
-                      key={`lang${index}`}
-                      src={framework.logo}
-                      className="w-16 h-16"
-                      alt={framework.title}
-                    />
-                    <small className="text-gray-300">{framework.title}</small>
+                  <div className="timeline-text flex items-start gap-2">
+                    <span className="text-[hsl(173,58%,39%)] mt-0.5">▫</span>
+                    <p className="text-[hsl(222,25%,32%)] leading-relaxed">
+                      <strong>Tech Stack Implementation:</strong> React.js, Typescript, Redux, Axios, Node.js, MongoDB, Postman, Git/GitHub, Tailwind CSS.
+                    </p>
                   </div>
-                </motion.div>
-              ))}
-            </div>
-          </li>
+                </div>
+              </div>
+            </CursorGlowCard>
+          </motion.li>
 
-          {/* Data base */}
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Data Base:</h4>
-            <div className="flex gap-3 flex-wrap mt-3">
-              {database.map((item, index) => (
-                <motion.div
-                  key={item.title}
-                  initial={{ opacity: 0, y: 60 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.001 }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="skill"
-                >
-                  <div className="flex flex-col gap-1 items-center">
-                    <img
-                      key={`lang${index}`}
-                      src={item.logo}
-                      className="w-16 h-16"
-                      alt={item.title}
-                    />
-                    <small className="text-gray-300">{item.title}</small>
+          <motion.li
+            className="timeline-item group/card"
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.15 }}
+            transition={{ duration: 0.45, delay: 0.16 }}
+          >
+            <CursorGlowCard className={cardClass}>
+              <div className="border-l-2 border-[hsl(173,58%,39%)] pl-4 sm:pl-5 -ml-1">
+                <h4 className="h4 timeline-item-title text-[hsl(222,47%,8%)] font-semibold mb-1">
+                  Software Development Engineer at StudentsBoat Inc.
+                </h4>
+                <p className="text-sm font-medium text-[hsl(173,58%,35%)] timeline-text mb-1">
+                  StudentsBoat Inc. · Full-Time · Nov 2024 — September, 2025
+                </p>
+                <p className="timeline-text text-[hsl(222,25%,32%)] mb-3">
+                  Portland, Oregon, United States · Remote
+                </p>
+                <div className="mt-3 space-y-2">
+                  <div className="timeline-text flex items-start gap-2">
+                    <span className="text-[hsl(173,58%,39%)] mt-0.5">▫</span>
+                    <p className="text-[hsl(222,25%,32%)] leading-relaxed">
+                      <strong>Enhanced UI/UX:</strong> Designed and built a responsive, reusable component library using React.js and scalable styling, ensuring a seamless user experience across applications serving a 100+ thousands user base.
+                    </p>
                   </div>
-                </motion.div>
-              ))}
-            </div>
-          </li>
-
-          {/* tools */}
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Tools:</h4>
-            <div className="flex gap-3 flex-wrap mt-3">
-              {tools.map((tool, index) => (
-                <motion.div
-                  key={tool.title}
-                  initial={{ opacity: 0, y: 60 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.001 }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="skill"
-                >
-                  <div className="flex flex-col gap-1 items-center">
-                    <img
-                      key={`lang${index}`}
-                      src={tool.logo}
-                      className="w-16 h-16"
-                      alt={tool.title}
-                    />
-                    <small className="text-gray-300">{tool.title}</small>
+                  <div className="timeline-text flex items-start gap-2">
+                    <span className="text-[hsl(173,58%,39%)] mt-0.5">▫</span>
+                    <p className="text-[hsl(222,25%,32%)] leading-relaxed">
+                      <strong>Comprehensive Solutions:</strong> Architected and deployed robust Product Listing and Detail pages, including Landlord & Host Family property listing operations, advanced filtering across 30+ categories, secure payment gateway integration, and progressive data loading—delivering scalability, security, and low latency.
+                    </p>
                   </div>
-                </motion.div>
-              ))}
-            </div>
-          </li>
+                  <div className="timeline-text flex items-start gap-2">
+                    <span className="text-[hsl(173,58%,39%)] mt-0.5">▫</span>
+                    <p className="text-[hsl(222,25%,32%)] leading-relaxed">
+                      <strong>Backend Functionality:</strong> Built backend services with email OTP-based registration, personalized user profiles, schema design aligned with business requirements, and full property lifecycle operations enabling management of 5K+ property listings.
+                    </p>
+                  </div>
+                  <div className="timeline-text flex items-start gap-2">
+                    <span className="text-[hsl(173,58%,39%)] mt-0.5">▫</span>
+                    <p className="text-[hsl(222,25%,32%)] leading-relaxed">
+                      <strong>API Development & Integration:</strong> Implemented REST APIs (CRUD) with Swagger documentation, optimized endpoints for performance, and seamlessly integrated them into frontend applications using Axios to ensure smooth data flow.
+                    </p>
+                  </div>
+                  <div className="timeline-text flex items-start gap-2">
+                    <span className="text-[hsl(173,58%,39%)] mt-0.5">▫</span>
+                    <p className="text-[hsl(222,25%,32%)] leading-relaxed">
+                      <strong>Collaboration:</strong> Collaborated with cross-functional teams to solve complex challenges, optimize performance, and ensure seamless integration of features. Conducted code reviews and peer programming sessions to maintain high code quality and foster a collaborative development environment.
+                    </p>
+                  </div>
+                  <div className="timeline-text flex items-start gap-2">
+                    <span className="text-[hsl(173,58%,39%)] mt-0.5">▫</span>
+                    <p className="text-[hsl(222,25%,32%)] leading-relaxed">
+                      <strong>Modern Tech Stack Implementation:</strong> Utilized React.js, Redux, Axios, Node.js, Prisma, PostgreSQL, Toastify, Swagger, Stripe, Postman, Git/GitHub, Azure, Tailwind, SCSS, to build scalable, maintainable, and visually appealing components for the application.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </CursorGlowCard>
+          </motion.li>
         </ol>
       </section>
     </article>

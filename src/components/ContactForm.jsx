@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const ContactForm = () => {
   // Form data state
@@ -47,7 +48,13 @@ const ContactForm = () => {
 
   return (
     <>
-      <article className="contact active" data-page="contact">
+      <motion.article
+        className="contact active"
+        data-page="contact"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
+      >
         <header>
           <h2 className="h2 article-title">Contact</h2>
         </header>
@@ -98,13 +105,19 @@ const ContactForm = () => {
               required
               data-form-input
             ></textarea>
-            <button className="form-btn" type="submit" disabled={!isFormValid}>
+            <motion.button
+              className="form-btn"
+              type="submit"
+              disabled={!isFormValid}
+              whileHover={isFormValid ? { scale: 1.01 } : {}}
+              whileTap={isFormValid ? { scale: 0.99 } : {}}
+            >
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
-            </button>
+            </motion.button>
           </form>
         </section>
-      </article>
+      </motion.article>
     </>
   );
 };
