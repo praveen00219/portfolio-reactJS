@@ -175,7 +175,7 @@ const Sidebar = () => {
         <!-- href="YOUR_RESUME_LINK_HERE": Replace this with the direct link to your resume file. -->
         <!-- download="YourName_Resume.pdf": Specifies the name of the file that will be downloaded.  --> */}
         <motion.a
-          href="https://drive.google.com/file/d/196ye7ZdyAu_sCSuo_80F-HuHh9XfY0dT/view?usp=sharing"
+          href="https://drive.google.com/file/d/1mnehh73rlcL5dkEblYnLtaL30bpNTeFO/view?usp=sharing"
           download="Praveen-Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
