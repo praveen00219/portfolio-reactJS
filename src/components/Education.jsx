@@ -126,10 +126,7 @@ const frameworks = [
     title: ".Net",
     logo: dotnet,
   },
-  {
-    title: "Supabase",
-    logo: supabase,
-  }
+ 
 ];
 
 const database = [
@@ -140,6 +137,10 @@ const database = [
   {
     title: "Firebase",
     logo: firebase,
+  },
+   {
+    title: "Supabase",
+    logo: supabase,
   },
   {
     title: "Cloudinary",
